@@ -6,15 +6,29 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-08-24T22:08:01-07:00"
+      "last_modified": "2021-08-24T22:39:40-07:00"
+    },
+    {
+      "path": "CV.html",
+      "title": "CV",
+      "description": "My current CV",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-08-24T22:39:41-07:00"
     },
     {
       "path": "index.html",
       "title": "My Website",
-      "description": "Welcome to the website. I hope you enjoy it!\n",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2021-08-24T22:08:01-07:00"
+      "contents": "\n\n          \n          \n          My Website\n          \n          \n          Home\n          About\n          CV\n          ☰\n          \n          \n      \n        \n          \n            My Website\n          \n          \n            \n              \n            \n            \n              \n            \n          \n\n          \n            \n              \n                  \n                    \n                      LinkedIn\n                    \n                  \n                \n                                \n                  \n                    \n                      Twitter\n                    \n                  \n                \n                                \n                  \n                    \n                      GitHub\n                    \n                  \n                \n                                \n                  \n                    \n                      Email\n                    \n                  \n                \n                              \n          \n\n          \n            \n              \n                                \n                  \n                    LinkedIn\n                  \n                \n                                \n                  \n                    Twitter\n                  \n                \n                                \n                  \n                    GitHub\n                  \n                \n                                \n                  \n                    Email\n                  \n                \n                              \n            \n          \n        \n      \n    \n\n    \n    \n    ",
+      "last_modified": "2021-08-24T22:39:41-07:00"
+    },
+    {
+      "path": "my_postcard.html",
+      "title": "Samantha Csik",
+      "author": [],
+      "contents": "\n\n          \n          \n          My Website\n          \n          \n          Home\n          About\n          CV\n          ☰\n          \n          \n      \n        \n          \n            Samantha Csik\n          \n          \n            \n              My bio here.\n            \n            \n              My bio here.\n            \n          \n\n          \n            \n              \n                  \n                    \n                      LinkedIn\n                    \n                  \n                \n                                \n                  \n                    \n                      Twitter\n                    \n                  \n                \n                                \n                  \n                    \n                      GitHub\n                    \n                  \n                \n                                \n                  \n                    \n                      Email\n                    \n                  \n                \n                              \n          \n\n          \n            \n              \n                                \n                  \n                    LinkedIn\n                  \n                \n                                \n                  \n                    Twitter\n                  \n                \n                                \n                  \n                    GitHub\n                  \n                \n                                \n                  \n                    Email\n                  \n                \n                              \n            \n          \n        \n      \n    \n\n    \n    \n    ",
+      "last_modified": "2021-08-24T22:39:41-07:00"
     }
   ],
   "collections": []

@@ -1,7 +1,17 @@
 ---
 title: "My Website"
-description: |
-  Welcome to the website. I hope you enjoy it!
+image: "sam.jpg"
+links:
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/samanthacsik/"
+  - label: Twitter
+    url: "https://twitter.com/SamanthaCsik"
+  - label: GitHub
+    url: "https://github.com/samanthacsik"
+  - label: Email
+    url: "scsik@ucsb.edu"
+output:
+  postcards::jolla
 site: distill::distill_website
 ---
 
