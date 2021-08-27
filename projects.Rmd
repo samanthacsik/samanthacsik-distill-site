@@ -1,0 +1,10 @@
+---
+title: "Projects"
+description: |
+  Projects I've been involved in
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
