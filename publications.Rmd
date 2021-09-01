@@ -1,7 +1,5 @@
 ---
 title: "Publications"
-description: |
-  Scienctific publications
 ---
 
 ```{r setup, include=FALSE}

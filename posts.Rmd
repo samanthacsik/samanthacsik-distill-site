@@ -1,7 +1,5 @@
 ---
 title: "Posts"
-description: |
-  Blog posts
 ---
 
 ```{r setup, include=FALSE}
