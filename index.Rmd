@@ -11,7 +11,7 @@ links:
   - label: Email
     url: "scsik@ucsb.edu"
 output:
-  postcards::trestles
+    postcards::trestles
 site: distill::distill_website
 ---
 
@@ -28,14 +28,13 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ### Biography     
 
-
 I'm eventually going to get around to adding a nice bio here, but for now this placeholder sentence will have to suffice.
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 ### Education
 
-**Masters in Ecology, Evolution & Marine Biology, 2020** 
+**MA in Ecology, Evolution & Marine Biology, 2020**
 
 University of California, Santa Barbara, Santa Barbara, CA
 

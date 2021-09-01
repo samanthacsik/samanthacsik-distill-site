@@ -7,3 +7,11 @@ description: |
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+[**Link to download my CV**](CV/SCsik_CV_NCEASDataTrainingCoordinator.pdf)
+
+Alternatively...you can insert a scrollable pdf of your CV directly (you'll need to view your knitted document a web browser to load the plugin). 
+
+```{r, echo = FALSE, message=FALSE, out.width = '100%', out.height = '100%'}
+knitr::include_graphics("CV/SCsik_CV_NCEASDataTrainingCoordinator.pdf")
+```

@@ -1,7 +1,8 @@
 name: "samanthacsik.github.io"
-title: "My Website"
+title: "Samantha Csik"
+theme: theme.css
 description: |
-  My Website
+  Samantha Csik's personal website
 output_dir: "docs"
 navbar:
   right:
