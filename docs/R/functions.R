@@ -14,10 +14,10 @@ create_footer <- function() {
     '© 2021 Samantha Csik',
     br(),
     fontawesome::fa('wrench', fill = fill, height = height), ' Made with ',
-    ',
+    '
     [',
     fontawesome::fa('code-branch', fill = fill, height = height),
-    '](https://github.com/samanthacsik), and the
+    '](https://github.com/samanthacsik) and the
     [',
     fontawesome::fa('r-project', fill = fill, height = height),
     '](https://cran.r-project.org/) ',
