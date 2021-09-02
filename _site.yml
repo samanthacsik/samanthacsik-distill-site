@@ -16,6 +16,6 @@ navbar:
       href: projects.html
     - text: "Teaching"
       href: teaching.html
-    - text: "Curriculum Vitae"
-      href: CV.html
+    - text: "CV"
+      href: CV/SCsik_CV_NCEASDataTrainingCoordinator.pdf
 output: distill::distill_article
