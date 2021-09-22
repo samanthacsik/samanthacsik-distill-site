@@ -13,6 +13,7 @@
       <dc:creator>Samantha Csik</dc:creator>
       <link>samanthacsik.github.io/posts/2021-09-21-my-first-test-post</link>
       <description>I started putting together some presentation slides on the whys and hows of blogging using {distill} when I realized...maybe I've just found the content for my first blog post??</description>
+      <category>distill</category>
       <guid>samanthacsik.github.io/posts/2021-09-21-my-first-test-post</guid>
       <pubDate>Tue, 21 Sep 2021 00:00:00 +0000</pubDate>
       <media:content url="samanthacsik.github.io/posts/2021-09-21-my-first-test-post/barney_blog.gif" medium="image" type="image/gif"/>

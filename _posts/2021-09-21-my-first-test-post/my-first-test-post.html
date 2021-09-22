@@ -110,7 +110,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","slug","date","preview","output"]}},"value":[{"type":"character","attributes":{},"value":["Why create slides about blogging when you can just blog about it instead?"]},{"type":"character","attributes":{},"value":["I started putting together some presentation slides on the whys and hows of blogging using {distill} when I realized...maybe I've just found the content for my first blog post??\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["first_name","last_name","url","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Samantha"]},{"type":"character","attributes":{},"value":["Csik"]},{"type":"character","attributes":{},"value":["https://github.com/samanthacsik"]},{"type":"character","attributes":{},"value":["0000-0002-5300-3075"]}]}]},{"type":"character","attributes":{},"value":["just-blog-it"]},{"type":"character","attributes":{},"value":["09-21-2021"]},{"type":"character","attributes":{},"value":["barney_blog.gif"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_float"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","preview","slug","categories","output","draft"]}},"value":[{"type":"character","attributes":{},"value":["Why create slides about blogging when you can just blog about it instead?"]},{"type":"character","attributes":{},"value":["I started putting together some presentation slides on the whys and hows of blogging using {distill} when I realized...maybe I've just found the content for my first blog post??\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["first_name","last_name","url","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Samantha"]},{"type":"character","attributes":{},"value":["Csik"]},{"type":"character","attributes":{},"value":["https://github.com/samanthacsik"]},{"type":"character","attributes":{},"value":["0000-0002-5300-3075"]}]}]},{"type":"character","attributes":{},"value":["09-21-2021"]},{"type":"character","attributes":{},"value":["barney_blog.gif"]},{"type":"character","attributes":{},"value":["just-blog-it"]},{"type":"character","attributes":{},"value":["distill"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_float","code_folding"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"logical","attributes":{},"value":[true]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -1466,6 +1466,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="d-title">
 <h1>Why create slides about blogging when you can just blog about it instead?</h1>
 <!--radix_placeholder_categories-->
+<div class="dt-tags">
+<div class="dt=tag">distill</div>
+</div>
 <!--/radix_placeholder_categories-->
 <p><p>I started putting together some presentation slides on the whys and hows of blogging using {distill} when I realized…maybe I’ve just found the content for my first blog post??</p></p>
 </div>
@@ -1486,22 +1489,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <li><a href="#customizing-your-distill-blog-posts">Customizing your <code>{distill}</code> blog &amp; posts</a>
 <ul>
 <li><a href="#preview-images">Preview images</a></li>
+<li><a href="#categories">Categories</a></li>
 <li><a href="#table-of-contents">Table of contents</a></li>
 <li><a href="#citation-information">Citation information</a></li>
-<li><a href="#categories">Categories</a></li>
 </ul></li>
+<li><a href="#references">References</a></li>
+<li><a href="#corrections">Corrections</a></li>
 </ul>
 </nav>
 </div>
 <p>I am a total blog newb.</p>
-<p>I also swore off ever having a personal website (for no good reason really other than being resistant to yet another account to keep updated), but taking a job as Data Training Coordinator at the <a href="https://www.nceas.ucsb.edu/">National Center for Ecological Analysis and Synthesis</a> (NCEAS) is slowly – well actually, quite rapidly – changing the way I view this whole put-yourself-out-there-professionally thing.</p>
-<p>I need to talk to our first Master of Environmental Data Science (MEDS) cohort (read more about this <em>awesome</em> new program <a href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science">here</a>) about why blogging as data scientists is important/valuable/a great learning experience and what a good blog post might look like.</p>
-<p>So I set off digging into other data science-related blogs, created an outline and slide template, etc. I even practiced creating a fake blog post on my own (and very much still under development) <a href="samanthacsik.github.io">personal website</a> in case anyone asked me to walk them through the steps (I can’t look like I don’t know what I’m doing now, right??).</p>
-<p>Ten slides deep and then it struck me – I was creating a presentation on how to blog without ever actually ever creating my own blog post?? Dammit. Doesn’t quite feel right. So here we are. Baby’s first blog post <em>~about blog posts~</em>. I’d say this first post is half meant to serve our MEDS students as they embark on their fall quarter (and will surely be asked to blog every now and again, and maybe even feel the urge to do it just for fun) and half meant to be the catalyst I so desperately needed to finally put a little bit of writing out there in the data science world.</p>
-<p>So here we go! Let’s chat about some of the cool things you can do with {distill} to create really beautiful blog posts and take a look at some of the creative ways you can publish data science content.</p>
+<p><em>BUT</em> I’ll soon be talking to our first Master of Environmental Data Science (MEDS) cohort (read more about this <em>awesome</em> new program <a href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science">here</a>) about why blogging as data scientists is important/valuable/a great learning experience and what a good blog post might look like.</p>
+<p>I originally set off on my self-education journey by digging into other data science-related blogs, and throwing together some slides about what I found. I even practiced creating a fake blog post on my own (and very much still under development) <a href="samanthacsik.github.io">personal website</a> in case anyone asked me to walk them through the steps (I can’t look like I don’t know what I’m doing now, right??).</p>
+<p>Ten slides deep and then it struck me – I was creating a presentation on how to blog without ever <em>actually</em> creating my own blog post?? Dammit. Doesn’t quite feel right. So here we are. Baby’s first blog post <em>~about blog posts~</em>. I’d say this first post is half meant to serve our MEDS students as they embark on their fall quarter (and will surely be asked to blog every now and again, and maybe even feel the urge to do it just for fun) and half meant to be the catalyst I so desperately needed to finally put a little bit of writing out there in the data science world.</p>
+<p>So here we go! I’ll start by first sharing examples of different blogs that I believe demonstrate of some of the creative ways to format and publish data science content. Then I’ll review some of the cool (and quite easy) things you can do with {distill} to create your own beautiful blog posts.</p>
+<p><em><strong>Disclaimer:</strong> A lot of the following content is just a compilation of excellent existing resources. I learn by repeating things (usually many times), so taking the time to type out code/YAML headers has been helpful, albeit not at all novel. See a list of all referenced resources at the bottom of this post.</em></p>
 <h2 id="adding-a-distill-blog-to-your-personal-website">Adding a <code>{distill}</code> blog to your personal website</h2>
 <p>If you have not yet made a {distill} site, there are <em>many</em> great tutorials out there. For MEDS students, I recommend following along with these <a href="https://docs.google.com/document/d/1c0SZiVvp32UTJ9sK_yVjI8ou6pVdFRXsY2236tiTA1c/edit">step-by-step instructions</a> by <a href="https://www.allisonhorst.com/">Allison Horst</a> before moving forward. For a very brief intro on customizing your {distill} site using CSS, check out these <a href="https://ucsb-meds.github.io/customizing-websites-css/#1">slides</a>.</p>
-<p><em>Note: The following section was adapted from Alison Hill’s blog post, <a href="https://www.apreshill.com/blog/2020-12-postcards-distill/">M-F-E-O: postcards + distill</a></em></p>
+<aside>
+<em>Note: The following section was adapted from Alison Hill’s blog post, <a href="https://www.apreshill.com/blog/2020-12-postcards-distill/">M-F-E-O: postcards + distill</a></em>
+</aside>
 <p>Now that you have your {distill} site up and running, you can create your first blog post by running the <code>distill::create_post()</code> in your console:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
@@ -1516,7 +1523,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>listing<span class="sc">:</span> posts <span class="co"># do this exactly</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code></pre></div>
 </div>
-<p>Finally, add a link to your blog’s listing page in your navbar by editing <code>_site.yml</code>. NOTE: Since I named by listing <code>.Rmd</code> file as <code>blog.Rmd</code>, the href I need to link to is <code>blog.html</code>.</p>
+<p>Finally, link your new listing page to your website’s navbar by editing <code>_site.yml</code>. <em>Note: Since I named by listing <code>.Rmd</code> file as <code>blog.Rmd</code>, the href I need to link to is <code>blog.html</code>.</em></p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='va'>navbar</span><span class='op'>:</span>
@@ -1529,40 +1536,59 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 </div>
 <h2 id="customizing-your-distill-blog-posts">Customizing your <code>{distill}</code> blog &amp; posts</h2>
-<p>A couple simple touches can go a long way in improving the look of your {distill} blog! Most of this content has been adapted from <a href="https://rstudio.github.io/distill/">Distill for R Markdown</a>.</p>
+<p>A couple simple touches can go a long way in improving the look of your {distill} blog!</p>
+<aside>
+<em>Note: This section’s content was largely adapted from <a href="https://rstudio.github.io/distill/">Distill for R Markdown</a>.</em>
+</aside>
 <h3 id="preview-images">Preview images</h3>
-<p>Preview images are those…</p>
+<p>Preview images are those fun little thumbnails that appear alongside blog posts on your listing page:</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="media/preview_img.png" width="1291" /></p>
 </div>
-<p>Add the image you would like to use as your preview to the folder where your blog post <code>.Rmd</code> lives (e.g. <code>_posts</code> -&gt; <code>YYYY-MM-DD-my-blog-post</code> -&gt; <code>my_preview_image.jpeg</code>). Add the <code>preview:</code> field to the YAML header of your blog post <code>.Rmd</code> file and set the value to the name of your preview image:</p>
+<p>Add your image to the folder where your blog post <code>.Rmd</code> lives (e.g. <code>_posts</code> -&gt; <code>YYYY-MM-DD-my-blog-post</code> -&gt; <code>my_preview_image.jpeg</code>). Then, add the <code>preview</code> field to the YAML header of your blog post <code>.Rmd</code> file and set the value to the name of your preview image:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">&quot;my blog post&quot;</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># (additional metadata e.g. description and date, excluded for brevity)</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>preview<span class="sc">:</span> my_preview_image.jpeg <span class="co"># your preview image</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>preview<span class="sc">:</span> my_preview_image.jpeg  <span class="co"># your preview image</span></span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>output<span class="sc">:</span></span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  distill<span class="sc">::</span>distill_article<span class="sc">:</span></span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    self_contained<span class="sc">:</span> false</span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code></pre></div>
 </div>
-<h3 id="table-of-contents">Table of contents</h3>
+<h3 id="categories">Categories</h3>
+<p>You can assign each post to one or more “categories,” making it easier for your readers to filter content. Do so by adding the <code>categories</code> field to the YAML header of your blog post <code>.Rmd</code> file, then list whichever self-defined categories you would like your post to be assigned to. For example, I assigned this blog post to a <code>distill</code> category:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">&quot;my blog post&quot;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">&quot;Why create slides about blogging when you can just blog about it instead?&quot;</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># (additional metadata e.g. description and date, excluded for brevity)</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>output<span class="sc">:</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  distill<span class="sc">::</span>distill_article<span class="sc">:</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    self_contained<span class="sc">:</span> false</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    toc<span class="sc">:</span> true              <span class="co"># add a table of contents</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    toc_float<span class="sc">:</span> true        <span class="co"># float it </span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code></pre></div>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>categories<span class="sc">:</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="sc">-</span> distill <span class="co"># list as many categories as you&#39;d like </span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code></pre></div>
+</div>
+<p>Take a look at your listing page to see all your categories (and how many articles are assigned to each). Assigned categories will also appear as metadata at the top of each post.</p>
+<h3 id="table-of-contents">Table of contents</h3>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">&quot;my blog post&quot;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># (additional metadata e.g. description and date, excluded for brevity)</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>output<span class="sc">:</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  distill<span class="sc">::</span>distill_article<span class="sc">:</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    self_contained<span class="sc">:</span> false</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    toc<span class="sc">:</span> true              <span class="co"># add a table of contents</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    toc_float<span class="sc">:</span> true        <span class="co"># float it (positioned on the left-hand side, rather at the top)</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code></pre></div>
 </div>
 <h3 id="citation-information">Citation information</h3>
 <p>You can enable</p>
 <p><a href="https://rstudio.github.io/distill/citations.html" class="uri">https://rstudio.github.io/distill/citations.html</a></p>
-<h3 id="categories">Categories</h3>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<h2 class="appendix" id="references">References</h2>
+<p>Hill (2020, Dec. 22), M-F-E-O: postcards + distill. Retrieved from <a href="https://www.apreshill.com/blog/2020-12-postcards-distill/" class="uri">https://www.apreshill.com/blog/2020-12-postcards-distill/</a></p>
+<p>Allaire, et al. (2018, Sept. 10). Distill for R Markdown. Retrieved from <a href="https://rstudio.github.io/distill" class="uri">https://rstudio.github.io/distill</a></p>
+<p><a href="https://rstudio.github.io/distill/blog.html" class="uri">https://rstudio.github.io/distill/blog.html</a></p>
+<h2 class="appendix" id="corrections">Corrections</h2>
+<p>If you see mistakes or want to suggest changes, please <a href="https://github.com/samanthacsik/samanthacsik.github.io/issues">create an issue</a> on the source repository.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
