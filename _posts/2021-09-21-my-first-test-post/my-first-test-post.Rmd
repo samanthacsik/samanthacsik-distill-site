@@ -1,0 +1,114 @@
+---
+title: "Why create slides about blogging when you can just blog about it instead?"
+description: |
+  I started putting together some presentation slides on the whys and hows of blogging using {distill} when I realized...maybe I've just found the content for my first blog post??
+author:
+  - first_name: "Samantha" 
+    last_name: "Csik"
+    url: https://github.com/samanthacsik
+    orcid_id: 0000-0002-5300-3075
+slug: just-blog-it
+date: 09-21-2021
+preview: barney_blog.gif
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+I am a total blog newb. 
+
+I also swore off ever having a personal website (for no good reason really other than being resistant to yet another account to keep updated), but taking a job as Data Training Coordinator at the [National Center for Ecological Analysis and Synthesis](https://www.nceas.ucsb.edu/) (NCEAS) is slowly -- well actually, quite rapidly -- changing the way I view this whole put-yourself-out-there-professionally thing. 
+
+I need to talk to our first Master of Environmental Data Science (MEDS) cohort (read more about this *awesome* new program [here](https://bren.ucsb.edu/masters-programs/master-environmental-data-science)) about why blogging as data scientists is important/valuable/a great learning experience and what a good blog post might look like. 
+
+So I set off digging into other data science-related blogs, created an outline and slide template, etc. I even practiced creating a fake blog post on my own (and very much still under development) [personal website](samanthacsik.github.io) in case anyone asked me to walk them through the steps (I can't look like I don't know what I'm doing now, right??).
+
+Ten slides deep and then it struck me -- I was creating a presentation on how to blog without ever actually ever creating my own blog post?? Dammit. Doesn't quite feel right. So here we are. Baby's first blog post *~about blog posts~*. I'd say this first post is half meant to serve our MEDS students as they embark on their fall quarter (and will surely be asked to blog every now and again, and maybe even feel the urge to do it just for fun) and half meant to be the catalyst I so desperately needed to finally put a little bit of writing out there in the data science world.
+
+So here we go! Let's chat about some of the cool things you can do with {distill} to create really beautiful blog posts and take a look at some of the creative ways you can publish data science content.
+
+## Adding a `{distill}` blog to your personal website 
+
+If you have not yet made a {distill} site, there are *many* great tutorials out there. For MEDS students, I recommend following along with these [step-by-step instructions](https://docs.google.com/document/d/1c0SZiVvp32UTJ9sK_yVjI8ou6pVdFRXsY2236tiTA1c/edit) by [Allison Horst](https://www.allisonhorst.com/) before moving forward. For a very brief intro on customizing your {distill} site using CSS, check out these [slides](https://ucsb-meds.github.io/customizing-websites-css/#1).
+
+*Note: The following section was adapted from Alison Hill's blog post, [M-F-E-O: postcards + distill](https://www.apreshill.com/blog/2020-12-postcards-distill/)*
+
+Now that you have your {distill} site up and running, you can create your first blog post by running the `distill::create_post()` in your console:
+
+```{r, eval = FALSE, echo = TRUE}
+create_post(title = "My blog post")
+```
+
+If this is the **first time** you are creating a blog post, `distill` will add a directory called `_posts/`, which will contain this plus all future blog posts. You will also need to create a **listing page**, which will list all of your posts. Do this by adding a blank `.Rmd` file to your root directory by running `utils::file.edit("blog.Rmd")` in your console, then add a YAML header to your new file as follows:
+
+```{r, eval = FALSE, echo = TRUE}
+---
+title: "Blog"  # any name you want
+listing: posts # do this exactly
+---
+```
+
+Finally, add a link to your blog's listing page in your navbar by editing `_site.yml`. NOTE: Since I named by listing `.Rmd` file as `blog.Rmd`, the href I need to link to is `blog.html`.
+
+```{r, eval = FALSE, echo = TRUE}
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "Blog"      # add 
+      href: blog.html   # add
+```
+
+## Customizing your `{distill}` blog & posts
+
+A couple simple touches can go a long way in improving the look of your {distill} blog! Most of this content has been adapted from [Distill for R Markdown](https://rstudio.github.io/distill/).
+
+### Preview images
+
+Preview images are those fun little thumbnails that appear alongside blog posts on your listing page:
+
+```{r}
+knitr::include_graphics("media/preview_img.png")
+```
+
+Add the image you would like to use as your preview to the folder where your blog post `.Rmd` lives (e.g. `_posts` -> `YYYY-MM-DD-my-blog-post` -> `my_preview_image.jpeg`). Add the `preview:` field to the YAML header of your blog post `.Rmd` file and set the value to the name of your preview image:
+
+```{r, eval = FALSE, echo = TRUE}
+---
+title: "my blog post"
+# (additional metadata e.g. description and date, excluded for brevity)
+preview: my_preview_image.jpeg  # your preview image (this can be a variety of file formats e.g. jpeg, png, gif)
+output:
+  distill::distill_article:
+    self_contained: false
+---
+```
+
+### Table of contents
+
+```{r, eval = FALSE, echo = TRUE}
+---
+title: "my blog post"
+# (additional metadata e.g. description and date, excluded for brevity)
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true              # add a table of contents
+    toc_float: true        # float it 
+---
+```
+
+### Citation information 
+
+You can enable 
+
+
+https://rstudio.github.io/distill/citations.html
+
+### Categories

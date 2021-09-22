@@ -3,17 +3,14 @@ title: "Samantha Csik"
 theme: theme.css
 description: |
   Samantha Csik's personal website
+base_url: samanthacsik.github.io
 output_dir: "docs"
 navbar:
   right:
-    - text: "Home"
+    - text: "About"
       href: index.html
-    - text: "Publications"
-      href: publications.html
     - text: "Posts"
       href: posts.html
-    - text: "Projects"
-      href: projects.html
     - text: "Teaching"
       href: teaching.html
     - text: "CV"

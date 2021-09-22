@@ -1,5 +1,6 @@
 ---
 title: "Samantha Csik"
+subtitle: "Data Training Coordinator"
 image: "sam.jpg"
 links:
   - label: '<i class="fab fa-linkedin"></i> LinkedIn'

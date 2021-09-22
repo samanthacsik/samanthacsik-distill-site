@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Samantha Csik</title>
+    <link>samanthacsik.github.io</link>
+    <atom:link href="samanthacsik.github.io/posts.xml" rel="self" type="application/rss+xml"/>
+    <description>Samantha Csik's personal website
+</description>
+    <generator>Distill</generator>
+    <lastBuildDate>Tue, 21 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Why create slides about blogging when you can just blog about it instead?</title>
+      <dc:creator>Samantha Csik</dc:creator>
+      <link>samanthacsik.github.io/posts/2021-09-21-my-first-test-post</link>
+      <description>I started putting together some presentation slides on the whys and hows of blogging using {distill} when I realized...maybe I've just found the content for my first blog post??</description>
+      <guid>samanthacsik.github.io/posts/2021-09-21-my-first-test-post</guid>
+      <pubDate>Tue, 21 Sep 2021 00:00:00 +0000</pubDate>
+      <media:content url="samanthacsik.github.io/posts/2021-09-21-my-first-test-post/barney_blog.gif" medium="image" type="image/gif"/>
+    </item>
+  </channel>
+</rss>
