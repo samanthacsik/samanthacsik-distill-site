@@ -112,6 +112,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <meta name="citation_reference" content="citation_title=M-F-E-O: postcards + distill;citation_publication_date=2020;citation_author=Alison Hill"/>
   <meta name="citation_reference" content="citation_title=R markdown cookbook, section 4.5 bibliographies and citations;citation_publication_date=2021;citation_author=Yihui Xie;citation_author=Christophe Dervieux;citation_author=Emily Riederer"/>
   <meta name="citation_reference" content="citation_title=Bookdown: Authoring books and technical documents with R markdown, section 2.8 citations;citation_publication_date=2021;citation_author=Yihui Xie"/>
+  <meta name="citation_reference" content="citation_title=Data, code &amp; coffee: Penguins and nakedpipes;citation_publication_date=2020;citation_author=Harry Fisher"/>
+  <meta name="citation_reference" content="citation_title=Eric ekholm: Improving ggplots with text color;citation_publication_date=2021;citation_author= EE"/>
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
@@ -1490,37 +1492,58 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#part-1---ways-to-structure-blog-posts">Part 1 - Ways to structure blog posts</a></li>
-<li><a href="#part-2---creating-customizing-your-own-blog">Part 2 - Creating &amp; customizing your own blog</a>
+<li><a href="#i.-how-should-i-structure-my-data-science-blog-post">I. How should I structure my data science blog post?</a>
 <ul>
-<li><a href="#adding-a-distill-blog-to-your-personal-website">Adding a <code>{distill}</code> blog to your personal website</a></li>
-<li><a href="#customizing-your-distill-blog-posts">Customizing your <code>{distill}</code> blog &amp; posts</a>
+<li><a href="#i.-comparing-popular-tools-to-new-alternatives">i. Comparing popular tools to new alternatives</a></li>
+<li><a href="#ii.-how-to-use-a-tool-and-when-its-appropriate-to-do-so">ii. <em>How</em> to use a tool and <em>when</em> it’s appropriate to do so</a></li>
+<li><a href="#section"></a></li>
+<li><a href="#section-1"></a></li>
+</ul></li>
+<li><a href="#ii.-adding-a-distill-blog-to-your-personal-website">II. Adding a <code>{distill}</code> blog to your personal website</a></li>
+<li><a href="#iii.-customizing-your-distill-blog-posts">III. Customizing your <code>{distill}</code> blog &amp; posts</a>
 <ul>
-<li><a href="#preview-images">Preview images</a></li>
-<li><a href="#categories">Categories</a></li>
-<li><a href="#table-of-contents">Table of contents</a></li>
-<li><a href="#citations">Citations</a></li>
-<li><a href="#bibliographies">Bibliographies</a></li>
+<li><a href="#i.-preview-images">i. Preview images</a></li>
+<li><a href="#ii.-categories">ii. Categories</a></li>
+<li><a href="#iii.-table-of-contents">iii. Table of contents</a></li>
+<li><a href="#iv.-citations">iv. Citations</a></li>
+<li><a href="#v.-bibliographies">v. Bibliographies</a></li>
 </ul></li>
 <li><a href="#corrections">Corrections</a></li>
-</ul></li>
 </ul>
 </nav>
 </div>
 <p>I am a total blog newb.</p>
-<p><em>BUT</em> I’ll soon be talking to our first Master of Environmental Data Science (MEDS) cohort (read more about this <em>awesome</em> new program <a href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science">here</a>) about why blogging as data scientists is important/valuable/a great learning experience and what a good blog post might look like…so I suppose it’s time to jump in feet first.</p>
-<p>I originally set off on my self-education journey by digging into other data science-related blogs, and throwing together some slides about what I found. I even practiced creating a fake blog post on my own (and very much still under development) <a href="samanthacsik.github.io">personal website</a> in case anyone asked me to walk them through the steps (I can’t look like I don’t know what I’m doing now, right??).</p>
-<p>Ten slides deep and then it struck me – I was creating a presentation on how to blog without ever <em>actually</em> creating my own blog post?? Dammit. Doesn’t quite feel right. So here we are. Baby’s first blog post <em>~about blog posts~</em>. I’d say this first post is half meant to serve our MEDS students as they embark on their fall quarter (and will surely be asked to blog every now and again, and maybe even feel the urge to do it just for fun) and half meant to be the catalyst I so desperately needed to finally put a little bit of writing out there in the data science world.</p>
-<p>So here we go! I’ll start by first sharing examples of different blogs that I believe demonstrate of some of the creative ways to format and publish data science content. Then I’ll review some of the cool things you can do with {distill} to customize your own beautiful posts.</p>
-<h1 id="part-1---ways-to-structure-blog-posts">Part 1 - Ways to structure blog posts</h1>
-<h1 id="part-2---creating-customizing-your-own-blog">Part 2 - Creating &amp; customizing your own blog</h1>
+<p><em>BUT</em> we all have to start somewhere. And my somewhere is leading a mini-workshop in T-6 days for our first Master of Environmental Data Science (MEDS) cohort (read more about this <em>awesome</em> new program <a href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science">here</a>) on why blogging as data scientists is an important and valuable skill to practice, what a good blog post might look like, and some of the technical aspects of creating blog posts using the {distill} package.</p>
+<p>I originally set off on my self-education journey by digging into other data science-related blogs and throwing together some slides about what I found. I even practiced creating a fake blog post on my own (and very much still under development) <a href="samanthacsik.github.io">personal website</a> in case anyone asked me to walk them through the steps (I can’t look like I don’t know what I’m doing now, right??).</p>
+<p>Ten slides deep and then it struck me – I was creating a presentation on how to blog without ever <em>actually</em> creating my own blog post?? Dammit. Doesn’t quite feel right. So here we are. Baby’s first blog post <em>~about blog posts~</em>. I’d say this first post is half meant to serve our MEDS students as they embark on their fall quarter (and will surely be asked to blog every now and again) and half meant to be the catalyst I so desperately needed to finally put a little bit of writing out there in the data science world.</p>
+<p>So here we go! I’ll start by first sharing examples of different blogs that I think demonstrate of some of the creative ways to format and publish data science content. Then I’ll review some of the cool things you can do with {distill} to customize your own beautiful posts.</p>
+<h2 id="i.-how-should-i-structure-my-data-science-blog-post">I. How should I structure my data science blog post?</h2>
+<p>If you have not yet checked out the <a href="https://distillery.rbind.io/">distillery</a>, this is your reason to do so! It’s a distill blog about building distill websites and blogs. In their words:</p>
+<blockquote>
+<p>The distillery was built for the community of <a href="https://rstudio.github.io/distill/">distill</a> users to find ways to build and customize their sites and to inspire one another. If you have a distill website or blog, we would love to have it included in the <a href="https://distillery.rbind.io/showcase.html">showcase</a>! Have a post about ways to customize or add new features to your blog? We would love to have it included on the <a href="https://distillery.rbind.io/tips_and_tricks.html">tips &amp; tricks</a> page! Check out the <a href="https://github.com/jhelvy/distillery">site repo</a> for details on how to contribute. This is an inclusive community of blogs for everyone to learn from, so please add yourself!</p>
+</blockquote>
+<p>After some exploration, I’ve compiled some of my favorite ___:</p>
+<h3 id="i.-comparing-popular-tools-to-new-alternatives">i. Comparing popular tools to new alternatives</h3>
+<p>Harry Fisher (<a href="https://www.hfshr.xyz/">Data, Code &amp; Coffee</a>) takes on <code>{nakedpipe}</code> a new(er) alternative to <code>{magrittr}</code>’s <code>%&gt;%</code> in his blog post, <strong>Penguins and nakedpipes</strong> <span class="citation" data-cites="fisher2020penguins">(<a href="#ref-fisher2020penguins" role="doc-biblioref">Fisher 2020</a>)</span>.</p>
+<div class="layout-chunk" data-layout="l-body">
+<iframe src="https://www.hfshr.xyz/posts/2020-06-21-penguins-and-nakedpipes/" width="60%" height="400px" data-external="1">
+</iframe>
+</div>
+<h3 id="ii.-how-to-use-a-tool-and-when-its-appropriate-to-do-so">ii. <em>How</em> to use a tool and <em>when</em> it’s appropriate to do so</h3>
+<p><a href="https://www.ericekholm.com/">Eric Ekholm</a> covers how to use the <code>{ggtext}</code> package to replace your use of ggplot legends with colored title text instead in his post, <strong>Improving ggplots with Text Color</strong> (<span class="citation" data-cites="ee2021improving"><a href="#ref-ee2021improving" role="doc-biblioref">EE</a> (<a href="#ref-ee2021improving" role="doc-biblioref">2021</a>)</span>). Importantly, he discusses when it might be most appropriate to do so and when you might opt for an alternative method.</p>
+<div class="layout-chunk" data-layout="l-body">
+<iframe src="https://www.ericekholm.com/posts/2021-03-24-improving-ggplots-with-text-color/" width="60%" height="400px" data-external="1">
+</iframe>
+</div>
+<h3 id="section"></h3>
+<h3 id="section-1"></h3>
+<h2 id="ii.-adding-a-distill-blog-to-your-personal-website">II. Adding a <code>{distill}</code> blog to your personal website</h2>
 <p><em><strong>Disclaimer:</strong> A lot of the following content is just a compilation of excellent existing resources. I learn by repeating things (usually many times), so taking the time to type out code/YAML headers has been helpful, albeit not at all novel. See a list of referenced resources at the bottom of this post.</em></p>
-<h2 id="adding-a-distill-blog-to-your-personal-website">Adding a <code>{distill}</code> blog to your personal website</h2>
 <p>If you have not yet made a {distill} site, there are <em>many</em> great tutorials out there. For MEDS students, I recommend following along with these <a href="https://docs.google.com/document/d/1c0SZiVvp32UTJ9sK_yVjI8ou6pVdFRXsY2236tiTA1c/edit">step-by-step instructions</a> by <a href="https://www.allisonhorst.com/">Allison Horst</a> before moving forward. For a very brief intro on customizing your {distill} site using CSS, check out these <a href="https://ucsb-meds.github.io/customizing-websites-css/#1">slides</a>.</p>
 <aside>
 <em>Note: The following section was adapted from <span class="citation" data-cites="apreshill2020postcards"><a href="#ref-apreshill2020postcards" role="doc-biblioref">Hill</a> (<a href="#ref-apreshill2020postcards" role="doc-biblioref">2020</a>)</span></em>
 </aside>
-<p>Now that you have your {distill} site up and running, you can create your first blog post by running the <code>distill::create_post()</code> in your console:</p>
+<p>Now that you have your {distill} site up and running, you can create your first blog post by running the <code>distill::create_post()</code> function in your console:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>create_post</span><span class='op'>(</span>title <span class='op'>=</span> <span class='st'>"My blog post"</span><span class='op'>)</span>
@@ -1546,12 +1569,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </code></pre>
 </div>
 </div>
-<h2 id="customizing-your-distill-blog-posts">Customizing your <code>{distill}</code> blog &amp; posts</h2>
+<h2 id="iii.-customizing-your-distill-blog-posts">III. Customizing your <code>{distill}</code> blog &amp; posts</h2>
 <p>A couple simple touches can go a long way in improving the look of your {distill} blog!</p>
 <aside>
 <em>Note: This section’s content was largely adapted from <span class="citation" data-cites="allaire2018distill"><a href="#ref-allaire2018distill" role="doc-biblioref">Allaire et al.</a> (<a href="#ref-allaire2018distill" role="doc-biblioref">2018</a>)</span></em>
 </aside>
-<h3 id="preview-images">Preview images</h3>
+<h3 id="i.-preview-images">i. Preview images</h3>
 <p>Preview images are those fun little thumbnails that appear alongside blog posts on your listing page:</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="media/preview_img.png" width="1291" /></p>
@@ -1564,7 +1587,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>preview<span class="sc">:</span> my_preview_image.jpeg  <span class="co"># your preview image</span></span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code></pre></div>
 </div>
-<h3 id="categories">Categories</h3>
+<h3 id="ii.-categories">ii. Categories</h3>
 <p>You can assign each post to one or more “categories,” making it easier for your readers to filter content. Do so by adding the <code>categories</code> field to the YAML header of your blog post <code>.Rmd</code> file, then list whichever self-defined categories you would like your post to be assigned to. For example, I assigned this blog post to a <code>distill</code> category:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
@@ -1575,7 +1598,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code></pre></div>
 </div>
 <p>Take a look at your listing page to see all your categories (and how many articles are assigned to each). Assigned categories will also appear as metadata at the top of each post.</p>
-<h3 id="table-of-contents">Table of contents</h3>
+<h3 id="iii.-table-of-contents">iii. Table of contents</h3>
 <p>Table of contents can be helpful for readers to navigate longer posts. Add the <code>toc</code> (and optionally, <code>toc_float</code>) field to your blog’s YAML header as shown below:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
@@ -1588,7 +1611,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    toc_float<span class="sc">:</span> true        <span class="co"># float it (positioned on the left-hand side, rather at the top)</span></span>
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code></pre></div>
 </div>
-<h3 id="citations">Citations</h3>
+<h3 id="iv.-citations">iv. Citations</h3>
 <p>You can add automatically-generated citations to the bottom of your posts, making it easier for readers to reference your work.</p>
 <p>I did this by first adding the <code>base_url</code> field to my <strong><code>_site.yml</code></strong> and set the value to the landing page URL of my {distill} site. For example:</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -1609,8 +1632,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <p>Your citations will now appear as metadata at the bottom of your post upon knitting:</p>
 <p>[ADD SCREENSHOT HERE]</p>
-<h3 id="bibliographies">Bibliographies</h3>
-<p>You can use standard <a href="https://pandoc.org/MANUAL.html#citations">R Markdown bibliographies</a> to cite works throughout your post and include a corresponding “References” list. You will first need to create a <code>.bib</code> file in the folder containing your blog post. You can do so by using the <code>file.edit()</code> function. For example:</p>
+<h3 id="v.-bibliographies">v. Bibliographies</h3>
+<p>You can use standard <a href="https://pandoc.org/MANUAL.html#citations">R Markdown bibliographies</a> to cite works throughout your post and include a corresponding “References” list. You will first need to create a <code>.bib</code> file in the folder containing your blog post. You can do so by running the <code>file.edit()</code> function in your console. For example:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://rdrr.io/r/utils/file.edit.html'>file.edit</a></span><span class='op'>(</span><span class='st'>"_posts/YYYY-MM-DD-my-blog-post/bibliography.bib"</span><span class='op'>)</span>
@@ -1642,6 +1665,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  }</span></code></pre></div>
 </div>
 <p>To include an in-text citation for the above reference, type <code>@allaire2018distill</code> (or if you prefer your citation to be inside parentheses, <code>[@allaire2018distill]</code>). Adding the in-text citation will automatically add the full reference to your “References” list at the bottom of your post. To read more about including bibliographies and citations in your blog posts, see <span class="citation" data-cites="bookdown"><a href="#ref-bookdown" role="doc-biblioref">Xie</a> (<a href="#ref-bookdown" role="doc-biblioref">2021</a>)</span> and <span class="citation" data-cites="cookbook"><a href="#ref-cookbook" role="doc-biblioref">Xie, Dervieux, and Riederer</a> (<a href="#ref-cookbook" role="doc-biblioref">2021</a>)</span>.</p>
+<hr />
 <p>There are <em>so</em> many resources</p>
 <h2 class="appendix" id="corrections">Corrections</h2>
 <p>If you see mistakes or want to suggest changes, please <a href="https://github.com/samanthacsik/samanthacsik.github.io/issues">create an issue</a> on the source repository.</p>
@@ -1649,6 +1673,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
 <div id="ref-allaire2018distill" class="csl-entry" role="doc-biblioentry">
 Allaire, JJ, Rich Iannone, Alison Presmanes Hill, and Yihui Xie. 2018. <span>“Distill for <span>R</span> Markdown.”</span> <a href="https://rstudio.github.io/distill">https://rstudio.github.io/distill</a>.
+</div>
+<div id="ref-ee2021improving" class="csl-entry" role="doc-biblioentry">
+EE. 2021. <span>“Eric Ekholm: Improving Ggplots with Text Color.”</span> <a href="https://www.ericekholm.com/posts/2021-03-24-improving-ggplots-with-text-color/">https://www.ericekholm.com/posts/2021-03-24-improving-ggplots-with-text-color/</a>.
+</div>
+<div id="ref-fisher2020penguins" class="csl-entry" role="doc-biblioentry">
+Fisher, Harry. 2020. <span>“Data, Code &amp; Coffee: Penguins and <span class="nocase">nakedpipes</span>.”</span> <a href="https://hfshr.xyz/posts/2020-06-21-penguins-and-nakedpipes/">https://hfshr.xyz/posts/2020-06-21-penguins-and-nakedpipes/</a>.
 </div>
 <div id="ref-apreshill2020postcards" class="csl-entry" role="doc-biblioentry">
 Hill, Alison. 2020. <span>“<span>M-F-E-O</span>: <span class="nocase">postcards</span> + <span class="nocase">distill</span>.”</span> <a href="https://www.apreshill.com/blog/2020-12-postcards-distill/">https://www.apreshill.com/blog/2020-12-postcards-distill/</a>.

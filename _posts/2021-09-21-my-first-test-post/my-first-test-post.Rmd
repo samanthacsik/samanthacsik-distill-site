@@ -28,21 +28,45 @@ knitr::opts_chunk$set(echo = FALSE)
 
 I am a total blog newb. 
 
-*BUT* I'll soon be talking to our first Master of Environmental Data Science (MEDS) cohort (read more about this *awesome* new program [here](https://bren.ucsb.edu/masters-programs/master-environmental-data-science)) about why blogging as data scientists is important/valuable/a great learning experience and what a good blog post might look like...so I suppose it's time to jump in feet first.
+*BUT* we all have to start somewhere. And my somewhere is leading a mini-workshop in T-6 days for our first Master of Environmental Data Science (MEDS) cohort (read more about this *awesome* new program [here](https://bren.ucsb.edu/masters-programs/master-environmental-data-science)) on why blogging as data scientists is an important and valuable skill to practice, what a good blog post might look like, and some of the technical aspects of creating blog posts using the {distill} package.
 
-I originally set off on my self-education journey by digging into other data science-related blogs, and throwing together some slides about what I found. I even practiced creating a fake blog post on my own (and very much still under development) [personal website](samanthacsik.github.io) in case anyone asked me to walk them through the steps (I can't look like I don't know what I'm doing now, right??).
+I originally set off on my self-education journey by digging into other data science-related blogs and throwing together some slides about what I found. I even practiced creating a fake blog post on my own (and very much still under development) [personal website](samanthacsik.github.io) in case anyone asked me to walk them through the steps (I can't look like I don't know what I'm doing now, right??).
 
-Ten slides deep and then it struck me -- I was creating a presentation on how to blog without ever *actually* creating my own blog post?? Dammit. Doesn't quite feel right. So here we are. Baby's first blog post *~about blog posts~*. I'd say this first post is half meant to serve our MEDS students as they embark on their fall quarter (and will surely be asked to blog every now and again, and maybe even feel the urge to do it just for fun) and half meant to be the catalyst I so desperately needed to finally put a little bit of writing out there in the data science world.
+Ten slides deep and then it struck me -- I was creating a presentation on how to blog without ever *actually* creating my own blog post?? Dammit. Doesn't quite feel right. So here we are. Baby's first blog post *~about blog posts~*. I'd say this first post is half meant to serve our MEDS students as they embark on their fall quarter (and will surely be asked to blog every now and again) and half meant to be the catalyst I so desperately needed to finally put a little bit of writing out there in the data science world.
 
-So here we go! I'll start by first sharing examples of different blogs that I believe demonstrate of some of the creative ways to format and publish data science content. Then I'll review some of the cool things you can do with {distill} to customize your own beautiful posts.
+So here we go! I'll start by first sharing examples of different blogs that I think demonstrate of some of the creative ways to format and publish data science content. Then I'll review some of the cool things you can do with {distill} to customize your own beautiful posts.
 
-# Part 1 - Ways to structure blog posts
+## I. How should I structure my data science blog post?
 
-# Part 2 - Creating & customizing your own blog
+If you have not yet checked out the [distillery](https://distillery.rbind.io/), this is your reason to do so! It's a distill blog about building distill websites and blogs. In their words: 
+
+> The distillery was built for the community of [distill](https://rstudio.github.io/distill/) users to find ways to build and customize their sites and to inspire one another. If you have a distill website or blog, we would love to have it included in the [showcase](https://distillery.rbind.io/showcase.html)! Have a post about ways to customize or add new features to your blog? We would love to have it included on the [tips & tricks](https://distillery.rbind.io/tips_and_tricks.html) page! Check out the [site repo](https://github.com/jhelvy/distillery) for details on how to contribute. This is an inclusive community of blogs for everyone to learn from, so please add yourself!
+
+After some exploration, I've compiled some of my favorite ___:
+
+### i. Comparing popular tools to new alternatives
+
+Harry Fisher ([Data, Code & Coffee](https://www.hfshr.xyz/)) takes on `{nakedpipe}` a new(er) alternative to `{magrittr}`'s `%>%` in his blog post, **Penguins and nakedpipes** [@fisher2020penguins].
+
+```{r, out.width = '60%', echo = FALSE}
+knitr::include_url("https://www.hfshr.xyz/posts/2020-06-21-penguins-and-nakedpipes/")
+```
+
+### ii. *How* to use a tool and *when* it's appropriate to do so
+
+[Eric Ekholm](https://www.ericekholm.com/) covers how to use the `{ggtext}` package to replace your use of ggplot legends with colored title text instead in his post, **Improving ggplots with Text Color** (@ee2021improving). Importantly, he discusses when it might be most appropriate to do so and when you might opt for an alternative method.
+
+```{r, out.width = '60%', echo = FALSE}
+knitr::include_url("https://www.ericekholm.com/posts/2021-03-24-improving-ggplots-with-text-color/")
+```
+
+###
+
+###
+
+## II. Adding a `{distill}` blog to your personal website 
 
 ***Disclaimer:** A lot of the following content is just a compilation of excellent existing resources. I learn by repeating things (usually many times), so taking the time to type out code/YAML headers has been helpful, albeit not at all novel. See a list of referenced resources at the bottom of this post.*
-
-## Adding a `{distill}` blog to your personal website 
 
 If you have not yet made a {distill} site, there are *many* great tutorials out there. For MEDS students, I recommend following along with these [step-by-step instructions](https://docs.google.com/document/d/1c0SZiVvp32UTJ9sK_yVjI8ou6pVdFRXsY2236tiTA1c/edit) by [Allison Horst](https://www.allisonhorst.com/) before moving forward. For a very brief intro on customizing your {distill} site using CSS, check out these [slides](https://ucsb-meds.github.io/customizing-websites-css/#1).
 
@@ -50,7 +74,7 @@ If you have not yet made a {distill} site, there are *many* great tutorials out 
 *Note: The following section was adapted from @apreshill2020postcards*
 </aside>
 
-Now that you have your {distill} site up and running, you can create your first blog post by running the `distill::create_post()` in your console:
+Now that you have your {distill} site up and running, you can create your first blog post by running the `distill::create_post()` function in your console:
 
 ```{r, eval = FALSE, echo = TRUE}
 create_post(title = "My blog post")
@@ -76,7 +100,7 @@ navbar:
       href: blog.html   # add
 ```
 
-## Customizing your `{distill}` blog & posts
+## III. Customizing your `{distill}` blog & posts
 
 A couple simple touches can go a long way in improving the look of your {distill} blog! 
 
@@ -84,7 +108,7 @@ A couple simple touches can go a long way in improving the look of your {distill
 *Note: This section's content was largely adapted from @allaire2018distill*
 </aside>
 
-### Preview images
+### i. Preview images
 
 Preview images are those fun little thumbnails that appear alongside blog posts on your listing page:
 
@@ -102,7 +126,7 @@ preview: my_preview_image.jpeg  # your preview image
 ---
 ```
 
-### Categories
+### ii. Categories
 
 You can assign each post to one or more "categories," making it easier for your readers to filter content. Do so by adding the `categories` field to the YAML header of your blog post `.Rmd` file, then list whichever self-defined categories you would like your post to be assigned to. For example, I assigned this blog post to a `distill` category:
 
@@ -117,7 +141,7 @@ categories:
 
 Take a look at your listing page to see all your categories (and how many articles are assigned to each). Assigned categories will also appear as metadata at the top of each post. 
 
-### Table of contents
+### iii. Table of contents
 
 Table of contents can be helpful for readers to navigate longer posts. Add the `toc` (and optionally, `toc_float`) field to your blog's YAML header as shown below: 
 
@@ -133,7 +157,7 @@ output:
 ---
 ```
 
-### Citations
+### iv. Citations
 
 You can add automatically-generated citations to the bottom of your posts, making it easier for readers to reference your work. 
 
@@ -162,9 +186,9 @@ Your citations will now appear as metadata at the bottom of your post upon knitt
 
 [ADD SCREENSHOT HERE] 
 
-### Bibliographies
+### v. Bibliographies
 
-You can use standard [R Markdown bibliographies](https://pandoc.org/MANUAL.html#citations) to cite works throughout your post and include a corresponding "References" list. You will first need to create a `.bib` file in the folder containing your blog post. You can do so by using the `file.edit()` function. For example:
+You can use standard [R Markdown bibliographies](https://pandoc.org/MANUAL.html#citations) to cite works throughout your post and include a corresponding "References" list. You will first need to create a `.bib` file in the folder containing your blog post. You can do so by running the `file.edit()` function in your console. For example:
 
 ```{r, eval = FALSE, echo = TRUE}
 file.edit("_posts/YYYY-MM-DD-my-blog-post/bibliography.bib")
@@ -202,6 +226,8 @@ Note the format of this citation, where `type` can be `manual`, `book`, `article
 ```
 
 To include an in-text citation for the above reference, type `@allaire2018distill` (or if you prefer your citation to be inside parentheses, `[@allaire2018distill]`). Adding the in-text citation will automatically add the full reference to your "References" list at the bottom of your post. To read more about including bibliographies and citations in your blog posts, see @bookdown and @cookbook.
+
+---
 
 There are *so* many resources 
 
