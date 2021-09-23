@@ -9,10 +9,10 @@ navbar:
   right:
     - text: "About"
       href: index.html
+    - text: "Talks & Workshops"
+      href: talks_workshops.html
     - text: "Posts"
       href: posts.html
-    - text: "Teaching"
-      href: teaching.html
     - text: "CV"
-      href: CV/SCsik_CV_NCEASDataTrainingCoordinator.pdf
+      href: CV/SCsik_CV_2021_09_22.pdf
 output: distill::distill_article

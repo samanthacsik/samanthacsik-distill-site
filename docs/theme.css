@@ -38,7 +38,7 @@ html {
 /*-- ARTICLE METADATA --*/
 d-byline {
   --heading-size:    0.6rem;
-  --heading-color:   rgba(100, 96, 95, 0.5); /*-- was rgba(0, 0, 0, 0.5) --*/ 
+  --heading-color:   #64605F; /*-- was rgba(0, 0, 0, 0.5) --*/ 
   --body-size:       0.8rem;
   --body-color:      rgba(100, 96, 95, 0.8); /*-- was rgba(0, 0, 0, 0.8) --*/
 }
@@ -52,7 +52,7 @@ d-byline {
 /*-- ARTICLE APPENDIX --*/
 d-appendix {
   --heading-size:    15px;
-  --heading-color:   rgba(100, 96, 95, 0.65); /*-- UNSURE WHAT THIS CHANGES was rgba(0, 0, 0, 0.65) --*/ 
+  --heading-color:   #64605F; /*-- UNSURE WHAT THIS CHANGES was rgba(0, 0, 0, 0.65) --*/ 
   --text-size:       0.8em;
   --text-color:      rgb(100, 96, 95, 0.5); /*-- UNSURE WHAT THIS CHANGES was rgba(0, 0, 0, 0.5) --*/
 }
@@ -81,7 +81,7 @@ d-appendix {
 /* -- the class, `distill-site-nav` addresses BOTH the header and footer (see https://rstudio.github.io/distill/) -- */ 
 .distill-site-nav{
   color: rgba(255, 255, 255, 0.8); 
-  background-color: #0DECCE; 
+  background-color: #93A588; 
   font-size: 19px;
   font-weight: 300;
 }
@@ -93,12 +93,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #64605F;
 }
 
-
-/* -- color any h3 element pink -- */
-/*h3{
-  color: #C41A60;
-}
-
-/*.distill-site-footer{
-  z-index:1000;
+/* -- change color of inline code -- */
+code {
+  color: #93A588;
+  background-color: #F5F2F2;
 }
