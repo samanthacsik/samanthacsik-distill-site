@@ -23,7 +23,7 @@ html {
   --aside-size:      12px;
   --fig-cap-size:    13px;
   /*-- Main font colors --*/
-  --title-color:     #00000; /* this targets any h1 elements*/
+  --title-color:     #64605F; /* this targets any h1 elements*/
   --header-color:    #64605F;;
   --body-color:      #64605F;
   --aside-color:     rgba(0, 0, 0, 0.6);

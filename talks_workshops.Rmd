@@ -1,7 +1,9 @@
 ---
-title: "Teaching"
+title: "Talks & Workshops"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+Coming soon! 
