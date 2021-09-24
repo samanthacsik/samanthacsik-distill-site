@@ -8,5 +8,16 @@
 </description>
     <generator>Distill</generator>
     <lastBuildDate>Fri, 24 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Why create presentation slides about blogging when you can just blog about it instead?</title>
+      <dc:creator>Samantha Csik</dc:creator>
+      <link>samanthacsik.github.io/posts/2021-09-21-my-first-test-post</link>
+      <description>I started putting together some slides on the whys and hows of blogging using {distill} when I realized...maybe I've just found the content for my first blog post??</description>
+      <category>distill</category>
+      <category>R</category>
+      <guid>samanthacsik.github.io/posts/2021-09-21-my-first-test-post</guid>
+      <pubDate>Fri, 24 Sep 2021 00:00:00 +0000</pubDate>
+      <media:content url="samanthacsik.github.io/posts/2021-09-21-my-first-test-post/barney_blog.gif" medium="image" type="image/gif"/>
+    </item>
   </channel>
 </rss>
