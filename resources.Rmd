@@ -2,9 +2,6 @@
 title: "Resources"
 description: |
   A collection of other people's writings, tutorials, etc. that I find particularly helpful.
-author:
-  - name: Samantha Csik
-date: "`r Sys.Date()`"
 output: 
   distill::distill_article:
     self_contained: false
