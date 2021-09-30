@@ -115,7 +115,7 @@ Matt Kerlogue [(The Lapsed Geographer)](https://lapsedgeographer.london/) detail
 knitr::include_url("https://lapsedgeographer.london/2020-04/covid19-scraping/")
 ```
 
-Now that we're all feeling inspired to flex our creative data science muscles, let's create and customize our own blog posts `r icons::fontawesome("blog")`
+Now that we're all feeling inspired to flex our creative data science muscles, let's create and customize our own blog posts `r fontawesome::fa("blog", fill = "#93A588", a11y = "sem")`
 
 ## III. Adding a distill blog to your personal website 
 
@@ -290,7 +290,7 @@ While citations and references will be automatically added as appendices to your
 <br>
 <br>
 
-I had a ton of fun playing around with some of these easy-to-implement features that the `{distill}` package provides for customizing blog posts. And I had even *more* fun checking out other data science blogs as I looked for inspiration. I hope they inspired you too! Happy blogging `r icons::fontawesome("smile-beam")`
+I had a ton of fun playing around with some of these easy-to-implement features that the `{distill}` package provides for customizing blog posts. And I had even *more* fun checking out other data science blogs as I looked for inspiration. I hope they inspired you too! Happy blogging `r fontawesome::fa("smile-beam", fill = "#93A588", a11y = "sem")`
 
 ## Corrections {.appendix}
 
