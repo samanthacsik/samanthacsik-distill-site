@@ -93,7 +93,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #64605F;
 }
 
-/* -- change color of inline code (background-color: #F5F2F2;)-- */
+/* -- change color of inline code (background-color: #F5F2F2;)-- */ 
 code {
   color: #A58893;
 }
+
+
