@@ -1,7 +1,7 @@
 ---
-title: "Resources"
+title: "resources"
 description: |
-  A collection of other people's writings, tutorials, etc. that I find particularly helpful.
+  a collection of other people's writings, tutorials, etc. that I find particularly helpful
 output: 
   distill::distill_article:
     self_contained: false
@@ -12,34 +12,34 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-*Currently under development* 
+*currently under development* 
 
 It's finally time for an upgraded notebook! I've been Slacking myself (and subsequently burying) links to resources for far too long, so my favorites will now live here. 
 
-## R tools
+## r tools
 
-## Data Viz
+## data viz
 
 * [The Sessions College Color Calculator](https://www.sessions.edu/color-calculator/), for creating color palettes
 
-## Creating presentations
+## creating presentations
 
 * Meet xaringan: Making slides in R Markdown, by Allison Hill. [slides](https://arm.rbind.io/slides/xaringan.html#1)
 
-## Open Data Science
+## open data science
 
-## Data Science Communities
+## data science communities
 
 * [R-Ladies Santa Barbara](https://www.meetup.com/rladies-santa-barbara/) and [R-Ladies Global](https://rladies.org/), which work to promote gender diversity in the R community
 * [EcoDataScience](https://eco-data-science.github.io/), an environmental data science study group at UCSB
 * [Southern California R Users](https://socalr.org/), an alliance of R user groups in Southern California
 * [Santa Barbara Women in STEM](https://www.sbwomeninstem.org/), while not specifically data science-focused, this group holds some really great career and networking events, panels, flash talks, and more
 
-## Web Accessibility
+## web accessibility
 
 * [The A11Y Project](https://www.a11yproject.com/) is a community-driven effort to make digital content more accessible. I still have a long way to go in making my own website [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/) compliant -- the A11Y Project not only has a ton of great blog posts, but also WCAG compliance checklist that I will definitely be returning to over and over again.
 * [Coblis](https://www.color-blindness.com/coblis-color-blindness-simulator/), a color blindness simulator -- just upload a file and view your color palettes as they would appear under different types of color deficiencies
 
-## Misc.
+## misc.
 
 * Discover new music to jam out to while you hack at [Every Noise at Once](https://everynoise.com/engenremap.html)

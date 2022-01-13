@@ -65,14 +65,14 @@ d-appendix {
   --text-color:       rgba(255, 255, 255, 0.8);
   --text-size:        19px;
   --hover-color:      white; 
-  --bkgd-color:       #93A588; /*-- was #0F2E3D --*/ 
+  --bkgd-color:       #88a2a5; /*-- sage green: #93A588 --*/ 
 }
 
 .distill-site-footer {
   --text-color:       rgba(255, 255, 255, 0.8);
   --text-size:        15px;
   --hover-color:      white;
-  --bkgd-color:       #93A588; 
+  --bkgd-color:       #88a2a5; 
 }
 
 /*-- Additional custom styles --*/
@@ -81,7 +81,7 @@ d-appendix {
 /* -- the class, `distill-site-nav` addresses BOTH the header and footer (see https://rstudio.github.io/distill/) -- */ 
 .distill-site-nav{
   color: rgba(255, 255, 255, 0.8); 
-  background-color: #93A588; 
+  background-color: #88a2a5; 
   font-size: 19px;
   font-weight: 300;
 }

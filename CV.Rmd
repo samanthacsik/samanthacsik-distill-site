@@ -1,9 +1,0 @@
----
-title: "CV"
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
-
-[**Download CV**](CV/SCsik_CV_NCEASDataTrainingCoordinator.pdf)
