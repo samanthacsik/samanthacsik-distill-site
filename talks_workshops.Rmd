@@ -45,7 +45,7 @@ knitr::opts_chunk$set(echo = FALSE)
 <span style = 'font-size:90%;'>`r fontawesome::fa("chevron-right", fill = "#64605F", a11y = "sem")` **Data Viz**</span>  
 <span style = 'font-size:80%;'>Sam Csik, An Bui & Juliette Verstaen</span>   
 <span style = 'font-size:80%; color:#88a2a5;'>*a code-along workshop to learn/review the basics of `{ggplot2}` and create three unique visualizations using `{palmerpenguins}` data*</span>   
-<span style = 'font-size:80%;'>R-Ladies Santa Barbara Meetup, May 2019</span>
+<span style = 'font-size:80%;'>R-Ladies Santa Barbara Meetup, August 2020</span>
 
 <span style = 'font-size:70%;'>[`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/j-verstaen/RLadiesSB-Data-Viz-Pt1), [`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://docs.google.com/presentation/d/1sU2H89F5e409WpYilRqYAqu7DdXSAivccEa4y44xZ7c/edit?usp=sharing)</span>
 
