@@ -23,6 +23,7 @@
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
@@ -55,7 +56,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -76,12 +77,34 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
 code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+</style>
+
+<style>
+  div.csl-bib-body { }
+  div.csl-entry {
+    clear: both;
+    }
+  .hanging div.csl-entry {
+    margin-left:2em;
+    text-indent:-2em;
+  }
+  div.csl-left-margin {
+    min-width:2em;
+    float:left;
+  }
+  div.csl-right-inline {
+    margin-left:2em;
+    padding-left:1em;
+  }
+  div.csl-indent {
+    margin-left: 2em;
+  }
 </style>
 
   <!--radix_placeholder_meta_tags-->
@@ -121,6 +144,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <meta name="citation_reference" content="citation_title=Ijeamaka anyene: So, you want to subdivide a rectangle;citation_publication_date=2021;citation_author=Ijeamaka Anyene"/>
   <meta name="citation_reference" content="citation_title=The lapsed geographer: Scraping google’s COVID-19 mobility report PDFs;citation_publication_date=2020;citation_author=Matt Kerlogue"/>
   <meta name="citation_reference" content="citation_title=The lapsed geographer: Automating the COVID19 PDF scraping;citation_publication_date=2020;citation_author=Matt Kerlogue"/>
+  <meta name="citation_reference" content="citation_title=Expecting to teach enhances learning and organization of knowledge in free recall of text passages;citation_publication_date=2014;citation_author=John F. Nestojko;citation_author=Dung C. Bui;citation_author= Kornell;citation_author=Elizabeth Ligon Bjork"/>
+  <meta name="citation_reference" content="citation_title=The utilization of the feynman technique in paired team teaching towards enhancing grade 10 ANHS students’ academic achievement in science;citation_publication_date=2020;citation_author=Ronnel Ian A. Ambion;citation_author=Rainier Santi C. De Leon;citation_author=Alfonso Pio Angelo R. Mendoza;citation_author=Reinier M. Navarro"/>
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
@@ -1276,7 +1301,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -1468,7 +1496,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Why create presentation slides about blogging when you can just blog about it instead?","description":"I started putting together some slides on the whys and hows of blogging using {distill} when I realized...maybe I've just found the content for my first blog post??","authors":[{"author":"Samantha Csik","authorURL":"https://github.com/samanthacsik","affiliation":"&nbsp;","affiliationURL":"#","orcidID":"0000-0002-5300-3075"}],"publishedDate":"2021-09-24T00:00:00.000+00:00","citationText":"Csik, 2021"}
+{"title":"Why create presentation slides about blogging when you can just blog about it instead?","description":"I started putting together some slides on the whys and hows of blogging using {distill} when I realized...maybe I've just found the content for my first blog post??","authors":[{"author":"Samantha Csik","authorURL":"https://github.com/samanthacsik","affiliation":"&nbsp;","affiliationURL":"#","orcidID":"0000-0002-5300-3075"}],"publishedDate":"2021-09-24T00:00:00.000-07:00","citationText":"Csik, 2021"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1593,7 +1621,7 @@ When you’ve written the same code 3 times, write a function<br><br>When you’
 <iframe src="https://lapsedgeographer.london/2020-04/covid19-scraping/" width="60%" height="400px" data-external="1">
 </iframe>
 </div>
-<p>Now that we’re all feeling inspired to flex our creative data science muscles, let’s create and customize our own blog posts <svg aria-label="Blog" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#93A588;overflow:visible;position:relative;"><title>Blog</title><path d="M172.2 226.8c-14.6-2.9-28.2 8.9-28.2 23.8V301c0 10.2 7.1 18.4 16.7 22 18.2 6.8 31.3 24.4 31.3 45 0 26.5-21.5 48-48 48s-48-21.5-48-48V120c0-13.3-10.7-24-24-24H24c-13.3 0-24 10.7-24 24v248c0 89.5 82.1 160.2 175 140.7 54.4-11.4 98.3-55.4 109.7-109.7 17.4-82.9-37-157.2-112.5-172.2zM209 0c-9.2-.5-17 6.8-17 16v31.6c0 8.5 6.6 15.5 15 15.9 129.4 7 233.4 112 240.9 241.5.5 8.4 7.5 15 15.9 15h32.1c9.2 0 16.5-7.8 16-17C503.4 139.8 372.2 8.6 209 0zm.3 96c-9.3-.7-17.3 6.7-17.3 16.1v32.1c0 8.4 6.5 15.3 14.8 15.9 76.8 6.3 138 68.2 144.9 145.2.8 8.3 7.6 14.7 15.9 14.7h32.2c9.3 0 16.8-8 16.1-17.3-8.4-110.1-96.5-198.2-206.6-206.7z"/></svg></p>
+<p>Now that we’re all feeling inspired to flex our creative data science muscles, let’s create and customize our own blog posts <svg aria-label="Blog" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#A58893;overflow:visible;position:relative;"><title>Blog</title><path d="M172.2 226.8c-14.6-2.9-28.2 8.9-28.2 23.8V301c0 10.2 7.1 18.4 16.7 22 18.2 6.8 31.3 24.4 31.3 45 0 26.5-21.5 48-48 48s-48-21.5-48-48V120c0-13.3-10.7-24-24-24H24c-13.3 0-24 10.7-24 24v248c0 89.5 82.1 160.2 175 140.7 54.4-11.4 98.3-55.4 109.7-109.7 17.4-82.9-37-157.2-112.5-172.2zM209 0c-9.2-.5-17 6.8-17 16v31.6c0 8.5 6.6 15.5 15 15.9 129.4 7 233.4 112 240.9 241.5.5 8.4 7.5 15 15.9 15h32.1c9.2 0 16.5-7.8 16-17C503.4 139.8 372.2 8.6 209 0zm.3 96c-9.3-.7-17.3 6.7-17.3 16.1v32.1c0 8.4 6.5 15.3 14.8 15.9 76.8 6.3 138 68.2 144.9 145.2.8 8.3 7.6 14.7 15.9 14.7h32.2c9.3 0 16.8-8 16.1-17.3-8.4-110.1-96.5-198.2-206.6-206.7z"/></svg></p>
 <h2 id="iii.-adding-a-distill-blog-to-your-personal-website">III. Adding a distill blog to your personal website</h2>
 <p><em><strong>Disclaimer:</strong> A lot of the following content (sections III &amp; IV) is just a compilation of excellent existing resources. I learn by repeating things (usually many times), so taking the time to type out code/YAML headers has been helpful, albeit not at all novel. See a list of referenced resources at the bottom of this post.</em></p>
 <p>If you have not yet made a distill site, there are <em>many</em> great tutorials out there. For MEDS students, I recommend following along with these <a href="https://docs.google.com/document/d/1c0SZiVvp32UTJ9sK_yVjI8ou6pVdFRXsY2236tiTA1c/edit">step-by-step instructions</a> by <a href="https://www.allisonhorst.com/">Allison Horst</a> before moving forward. For a very brief intro on customizing your distill site using CSS, check out these <a href="https://ucsb-meds.github.io/customizing-websites-css/#1">slides</a>.</p>
@@ -1727,7 +1755,7 @@ When you’ve written the same code 3 times, write a function<br><br>When you’
 <p><code>## Corrections {.appendix}</code></p>
 <p><code>If you see mistakes or want to suggest changes...</code></p>
 <p><br> <br></p>
-<p>I had a ton of fun playing around with some of these easy-to-implement features that the <code>{distill}</code> package provides for customizing blog posts. And I had even <em>more</em> fun checking out other data science blogs as I looked for inspiration. I hope they inspired you too! Happy blogging <svg aria-label="Beaming Face With Smiling Eyes" role="img" viewBox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#93A588;overflow:visible;position:relative;"><title>Beaming Face With Smiling Eyes</title><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zM112 223.4c3.3-42.1 32.2-71.4 56-71.4s52.7 29.3 56 71.4c.7 8.6-10.8 11.9-14.9 4.5l-9.5-17c-7.7-13.7-19.2-21.6-31.5-21.6s-23.8 7.9-31.5 21.6l-9.5 17c-4.3 7.4-15.8 4-15.1-4.5zm250.8 122.8C334.3 380.4 292.5 400 248 400s-86.3-19.6-114.8-53.8c-13.5-16.3 11-36.7 24.6-20.5 22.4 26.9 55.2 42.2 90.2 42.2s67.8-15.4 90.2-42.2c13.6-16.2 38.1 4.3 24.6 20.5zm6.2-118.3l-9.5-17c-7.7-13.7-19.2-21.6-31.5-21.6s-23.8 7.9-31.5 21.6l-9.5 17c-4.1 7.3-15.6 4-14.9-4.5 3.3-42.1 32.2-71.4 56-71.4s52.7 29.3 56 71.4c.6 8.6-11 11.9-15.1 4.5z"/></svg></p>
+<p>I had a ton of fun playing around with some of these easy-to-implement features that the <code>{distill}</code> package provides for customizing blog posts. And I had even <em>more</em> fun checking out other data science blogs as I looked for inspiration. I hope they inspired you too! Happy blogging <svg aria-label="Beaming Face With Smiling Eyes" role="img" viewBox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#A58893;overflow:visible;position:relative;"><title>Beaming Face With Smiling Eyes</title><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zM112 223.4c3.3-42.1 32.2-71.4 56-71.4s52.7 29.3 56 71.4c.7 8.6-10.8 11.9-14.9 4.5l-9.5-17c-7.7-13.7-19.2-21.6-31.5-21.6s-23.8 7.9-31.5 21.6l-9.5 17c-4.3 7.4-15.8 4-15.1-4.5zm250.8 122.8C334.3 380.4 292.5 400 248 400s-86.3-19.6-114.8-53.8c-13.5-16.3 11-36.7 24.6-20.5 22.4 26.9 55.2 42.2 90.2 42.2s67.8-15.4 90.2-42.2c13.6-16.2 38.1 4.3 24.6 20.5zm6.2-118.3l-9.5-17c-7.7-13.7-19.2-21.6-31.5-21.6s-23.8 7.9-31.5 21.6l-9.5 17c-4.1 7.3-15.6 4-14.9-4.5 3.3-42.1 32.2-71.4 56-71.4s52.7 29.3 56 71.4c.6 8.6-11 11.9-15.1 4.5z"/></svg></p>
 <h2 class="appendix" id="corrections">Corrections</h2>
 <p>If you see mistakes or want to suggest changes, please <a href="https://github.com/samanthacsik/samanthacsik.github.io/issues">create an issue</a> on the source repository.</p>
 <h2 class="appendix" id="source-code">Source code</h2>
@@ -1783,7 +1811,7 @@ Xie, Yihui, Christophe Dervieux, and Emily Riederer. 2021. <span>“<span>R</spa
 <section class="footnotes" role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1" role="doc-endnote"><p>This is sometimes referred to as the Protégé Effect or the Feynman Learning Technique. You can learn a bit more from <span class="citation" data-cites="">(<a href="#ref-Nestojko2014protege" role="doc-biblioref">Nestojko et al. 2014</a>)</span> and <span class="citation" data-cites="">(<a href="#ref-Ambio2020Feynman" role="doc-biblioref">Ambion et al. 2020</a>)</span><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1" role="doc-endnote"><p>This is sometimes referred to as the Protégé Effect or the Feynman Learning Technique. You can learn a bit more from <span class="citation" data-cites="Nestojko2014protege">(<a href="#ref-Nestojko2014protege" role="doc-biblioref">Nestojko et al. 2014</a>)</span> and <span class="citation" data-cites="Ambio2020Feynman">(<a href="#ref-Ambio2020Feynman" role="doc-biblioref">Ambion et al. 2020</a>)</span><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2" role="doc-endnote"><p>I might also add that having to look up something 3x <em>for yourself</em> might be a good reason to blog about it. Read David Robinson’s full post about starting a data science blog <a href="http://varianceexplained.org/r/start-blog/">here</a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3" role="doc-endnote"><p>Many of the following blogs can be found on the <a href="https://distillery.rbind.io/">distillery</a>, a blog about building distill websites and blogs. Check it out!<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>

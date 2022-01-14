@@ -42,6 +42,13 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <span style = 'font-size:70%;'>[`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/customizing-websites-css), [`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://ucsb-meds.github.io/customizing-websites-css/#1)</span>
 
+<span style = 'font-size:90%;'>`r fontawesome::fa("chevron-right", fill = "#64605F", a11y = "sem")` **It's ~~just~~ ALL about semantics**</span>  
+<span style = 'font-size:80%;'>Sam Csik</span>  
+<span style = 'font-size:80%; color:#88a2a5;'>*a lightening talk on how semantic tools can make finding data easier and impactful synthesis science faster, given as part of the Software Lightening Talk series*</span>   
+<span style = 'font-size:80%;'>Santa Barbara Women in STEM, March 2021</span>
+
+<span style = 'font-size:70%;'>[`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://docs.google.com/presentation/d/10HNe2u-QrtPOTk1G9FdmtBy779HmVlrNC2Nk_-YWEXc/edit?usp=sharing)</span>
+
 <span style = 'font-size:90%;'>`r fontawesome::fa("chevron-right", fill = "#64605F", a11y = "sem")` **Data Viz**</span>  
 <span style = 'font-size:80%;'>Sam Csik, An Bui & Juliette Verstaen</span>   
 <span style = 'font-size:80%; color:#88a2a5;'>*a code-along workshop to learn/review the basics of `{ggplot2}` and create three unique visualizations using `{palmerpenguins}` data*</span>   
