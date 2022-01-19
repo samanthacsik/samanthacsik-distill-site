@@ -20,13 +20,23 @@ It's finally time for an upgraded notebook! I've been Slacking myself (and subse
 
 ## data viz
 
+* [from Data to Viz](https://www.data-to-viz.com/), a choose-your-adventure-type experience for creating your best data visualizations
+
 * [The Sessions College Color Calculator](https://www.sessions.edu/color-calculator/), for creating color palettes
 
 ## creating presentations
 
 * Meet xaringan: Making slides in R Markdown, by Allison Hill. [slides](https://arm.rbind.io/slides/xaringan.html#1)
 
-## open data science
+* Something I haven't yet tried out (but really want to) -- [Sharing Your `xaringan` Slides](https://www.garrickadenbuie.com/blog/sharing-xaringan-slides/), by Garrick Aden-Buie
+
+## learning materials
+
+* Ever feel like you need a pick-me-up while learning stats or a new R tool? Look no further than [Allison Horst's](https://twitter.com/allison_horst) [R & stats illustrations](https://github.com/allisonhorst/stats-illustrations), featuring the cutest and most educational fuzzy monsters you'll ever see!
+
+* I'll preface this by saying that I do not know much at all about machine learning, but this was shared with our MEDS students on Slack and looks *awesome* -- [The Hitchhiker's Guide to Responsible Machine Learning](https://betaandbit.github.io/RML/), by Przemysław Biecek, Anna Kozak & Aleksander Zawada
+
+* [Mastering Shiny](https://mastering-shiny.org/index.html), by Hadley Wickham 
 
 ## data science communities
 
