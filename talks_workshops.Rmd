@@ -6,6 +6,13 @@ title: "talks & workshops"
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+<span style = 'font-size:95%;'>`r fontawesome::fa("chevron-right", fill = "#64605F", a11y = "sem")` **Intro to Shiny**</span>  
+<span style = 'font-size:80%;'>Sam Csik</span>  
+<span style = 'font-size:80%; color:#88a2a5;'>*a hands-on coding workshop on how to build a shiny app*</span>  
+<span style = 'font-size:80%;'>Master of Environmental Data Science Program, UCSB, February 2022</span>
+
+<span style = 'font-size:70%;'>[`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/shiny-workshop), [`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://ucsb-meds.github.io/shiny-workshop/#1)
+
 <span style = 'font-size:95%;'>`r fontawesome::fa("chevron-right", fill = "#64605F", a11y = "sem")` **Teach Me How to Google**</span>  
 <span style = 'font-size:80%;'>Sam Csik</span>  
 <span style = 'font-size:80%; color:#88a2a5;'>*a talk on how to troubleshoot code and Google for helpful answers*</span>  
