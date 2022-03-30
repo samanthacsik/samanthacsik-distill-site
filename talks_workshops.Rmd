@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = FALSE)
 <span style = 'font-size:80%;'>Master of Technology Management Program, UCSB, January 2022 (invited talk)</span>  
 <span style = 'font-size:80%;'>Master of Environmental Data Science Program, UCSB, October 2021</span>
 
-<span style = 'font-size:70%;'>[`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/teach-me-how-to-google), [`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://ucsb-meds.github.io/teach-me-how-to-google/#1), [`r fontawesome::fa("plus", fill = "#64605F", a11y = "sem")` slide adaptations for invited talks](https://samanthacsik.github.io/teach-me-how-to-google/)</span>
+<span style = 'font-size:70%;'>[`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/teach-me-how-to-google), [`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://ucsb-meds.github.io/teach-me-how-to-google/#1), [`r fontawesome::fa("plus", fill = "#64605F", a11y = "sem")` slide adaptations for invited talks](https://samanthacsik.github.io/teach-me-how-to-google/), [`r fontawesome::fa("video", fill = "#64605F", a11y = "sem")` recording](https://drive.google.com/file/d/1eAluhmkL3PBvhYXzQ5T6X6TOO1pQStSQ/view?usp=sharing)</span>
 
 <span style = 'font-size:95%;'>`r fontawesome::fa("chevron-right", fill = "#64605F", a11y = "sem")` **Intro to Shiny**</span>  
 <span style = 'font-size:80%;'>Sam Csik</span>  

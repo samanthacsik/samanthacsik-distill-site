@@ -18,6 +18,8 @@ It's finally time for an upgraded notebook! I've been Slacking myself (and subse
 
 ## r tools
 
+* [free icons from fontawesome](https://fontawesome.com/v5/search?m=free) + the [`{fontawesome}`](https://github.com/rstudio/fontawesome) R package for infusing your `{xaringan}` slides, website, RMarkdowns, and more with an extra splash of fun
+
 ## data viz
 
 * [from Data to Viz](https://www.data-to-viz.com/), a choose-your-adventure-type experience for creating your best data visualizations
@@ -34,9 +36,11 @@ It's finally time for an upgraded notebook! I've been Slacking myself (and subse
 
 * Ever feel like you need a pick-me-up while learning stats or a new R tool? Look no further than [Allison Horst's](https://twitter.com/allison_horst) [R & stats illustrations](https://github.com/allisonhorst/stats-illustrations), featuring the cutest and most educational fuzzy monsters you'll ever see!
 
-* I'll preface this by saying that I do not know much at all about machine learning, but this was shared with our MEDS students on Slack and looks *awesome* -- [The Hitchhiker's Guide to Responsible Machine Learning](https://betaandbit.github.io/RML/), by Przemysław Biecek, Anna Kozak & Aleksander Zawada
-
 * [Mastering Shiny](https://mastering-shiny.org/index.html), by Hadley Wickham 
+
+* [Happy Git and GitHub for the useR](https://happygitwithr.com/), by Jenny Bryan
+
+* [R for Data Science](https://r4ds.had.co.nz/), by Hadley Wickham
 
 ## data science communities
 
