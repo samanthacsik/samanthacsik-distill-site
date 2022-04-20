@@ -2212,6 +2212,22 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: #A58893;
   }
 
+  /* add hyperlinked icon with button - see JHelvy's post*/
+  /* https://www.jhelvy.com/posts/2021-03-25-customizing-distill-with-htmltools-and-css/#link-buttons-with-icons-text */
+  /*.icon-link {
+      background-color: #FFFFFF;
+      color:  #88a2a5;
+      padding: 3px 5px 3px 5px;
+      margin: 0 2px 0 2px;
+      border-radius: 5px; /* Rounded edges */
+  /*} 
+
+  /* add hyperlinked icon with button - see JHelvy's post*/
+  /* https://www.jhelvy.com/posts/2021-03-25-customizing-distill-with-htmltools-and-css/#link-buttons-with-icons-text */
+  /*.icon-link:hover {
+      background-color: #FFFFFF;
+      color: #88a2a5;
+  /*}
   </style>
   <style type="text/css">
   /* base style */
@@ -2368,7 +2384,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2551,6 +2567,23 @@ function init_posts_list() {
 <div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
 <div class="posts-list">
 <h1 class="posts-list-caption" data-caption="posts">posts</h1>
+<a href="posts/2022-04-19-rstudio-tips-tricks/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["MEDS"]}</script>
+<div class="metadata">
+<div class="publishedDate">Nov. 15, 2021</div>
+<div class="dt-authors">
+<div class="dt-author">Samantha Csik</div>
+</div>
+</div>
+<div class="thumbnail"></div>
+<div class="description">
+<h2> RStudio Tips &amp; Tricks</h2>
+<div class="dt-tags">
+<div class="dt-tag">MEDS</div>
+</div>
+<p>a talk on RStudio IDE tips &amp; tricks and other keyboard shortcuts</p>
+</div>
+</a>
 <a href="posts/2021-09-21-my-first-test-post/" class="post-preview">
 <script class="post-metadata" type="text/json">{"categories":["distill","R"]}</script>
 <div class="metadata">
@@ -2578,10 +2611,14 @@ function init_posts_list() {
 <ul>
 <li>
 <a href="#category:Articles">Articles</a>
-<span class="category-count">(1)</span>
+<span class="category-count">(2)</span>
 </li>
 <li>
 <a href="#category:distill">distill</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:MEDS">MEDS</a>
 <span class="category-count">(1)</span>
 </li>
 <li>

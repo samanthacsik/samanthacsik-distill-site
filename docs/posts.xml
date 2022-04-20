@@ -7,7 +7,16 @@
     <description>Samantha Csik's personal website
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Fri, 24 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Nov 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title> RStudio Tips &amp; Tricks</title>
+      <dc:creator>Samantha Csik</dc:creator>
+      <link>samanthacsik.github.io/posts/2022-04-19-rstudio-tips-tricks</link>
+      <description>a talk on RStudio IDE tips &amp; tricks and other keyboard shortcuts</description>
+      <category>MEDS</category>
+      <guid>samanthacsik.github.io/posts/2022-04-19-rstudio-tips-tricks</guid>
+      <pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Why create presentation slides about blogging when you can just blog about it instead?</title>
       <dc:creator>Samantha Csik</dc:creator>
