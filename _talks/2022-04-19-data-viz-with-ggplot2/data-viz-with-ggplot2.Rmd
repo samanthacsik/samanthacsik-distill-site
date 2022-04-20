@@ -23,7 +23,7 @@ author:
     affiliation_url: https://www.meetup.com/rladies-santa-barbara/
 date: 2021-03-03
 slug: csiketal2020dataViz
-preview:
+preview: ggplot2.png
 categories:
   - RLadies
 output:

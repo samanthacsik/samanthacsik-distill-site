@@ -1,24 +1,5 @@
 [
   {
-    "path": "posts/2022-04-19-rstudio-tips-tricks/",
-    "title": " RStudio Tips & Tricks",
-    "description": "a talk on RStudio IDE tips & tricks and other keyboard shortcuts",
-    "author": [
-      {
-        "name": "Samantha Csik",
-        "url": "https://github.com/samanthacsik"
-      }
-    ],
-    "date": "2021-11-15",
-    "categories": [
-      "MEDS"
-    ],
-    "contents": "\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\n\nTelevision\nslides ~~ GitHub Square\nsource code\n\n\n\nOverview\nThis talk was originally developed for the Master of Environmental Data Science\n(MEDS) program, administered by the Bren\nSchool of Environmental Science & Management in partnership with\nthe National Center for Ecological\nAnalysis and Synthesis.\nAbstract\nAs environmental data scientists, we spend a lot of time in RStudio.\nTaking some time to learn how you can customize your RStudio IDE\n(Integrated Development\nEnvironment) and the keyboard shortcuts used to\nnavigate around that IDE can make you a more efficient (and happier)\nhacker!\n\n\n\n",
-    "preview": {},
-    "last_modified": "2022-04-19T20:56:32-07:00",
-    "input_file": "rstudio-tips-tricks.knit.md"
-  },
-  {
     "path": "posts/2021-09-21-my-first-test-post/",
     "title": "Why create presentation slides about blogging when you can just blog about it instead?",
     "description": "I started putting together some slides on the whys and hows of blogging using {distill} when I realized...maybe I've just found the content for my first blog post??",

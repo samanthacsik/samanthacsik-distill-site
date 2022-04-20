@@ -32,7 +32,7 @@ xaringanExtra::embed_xaringan(
 
 <br>
 
-[`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://ucsb-meds.github.io/cloud-computing/#1) ~~ [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/cloud-computing) ~~ [`r fontawesome::fa("plus", fill = "#64605F", a11y = "sem")` slide adaptations for invited talks](https://samanthacsik.github.io/teach-me-how-to-google/) ~~ [`r fontawesome::fa("video", fill = "#64605F", a11y = "sem")` recording](https://drive.google.com/file/d/1eAluhmkL3PBvhYXzQ5T6X6TOO1pQStSQ/view)
+[`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://ucsb-meds.github.io/teach-me-how-to-google/#1) ~~ [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/teach-me-how-to-google) ~~ [`r fontawesome::fa("plus", fill = "#64605F", a11y = "sem")` slide adaptations for invited talks](https://samanthacsik.github.io/teach-me-how-to-google/) ~~ [`r fontawesome::fa("video", fill = "#64605F", a11y = "sem")` recording](https://drive.google.com/file/d/1eAluhmkL3PBvhYXzQ5T6X6TOO1pQStSQ/view)
 
 ```{r icon-links, eval=TRUE, echo=FALSE}
 # distilltools::icon_link(icon = "fas fa-tv",
