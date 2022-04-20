@@ -1,0 +1,54 @@
+---
+title: "Writing data science-related blog posts for your personal website"
+description: |
+ a blog...about blogging!
+author:
+  - first_name: "Samantha" 
+    last_name: "Csik"
+    url: https://samanthacsik.github.io/
+    orcid_id: 0000-0002-5300-3075
+    affiliation: Master of Environmental Data Science Program @ The Bren School (UCSB) & The National Center for Ecological Analysis and Synthesis
+    affiliation_url: https://ucsb-meds.github.io/
+date: 2021-09-24
+slug: csik2021blogging
+preview: barney_blog.gif
+categories:
+  - MEDS
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">When you’ve written the same code 3 times, write a function<br><br>When you’ve given the same in-person advice 3 times, write a blog post</p>&mdash; David Robinson (@drob) <a href="https://twitter.com/drob/status/928447584712253440?ref_src=twsrc%5Etfw">November 9, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<br>
+
+[`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://ucsb-meds.github.io/writing-blogposts/#1) ~~ [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/writing-blogposts) ~~ [`r fontawesome::fa("blog", fill = "#64605F", a11y = "sem")` blog post](https://samanthacsik.github.io/posts/2021-09-21-my-first-test-post/)
+
+```{r icon-links, eval=TRUE, echo=FALSE}
+# distilltools::icon_link(icon = "fas fa-tv",
+#           text = "slides",
+#           url = "https://ucsb-meds.github.io/cloud-computing/#1")
+#           
+#           
+# distilltools::icon_link(icon = "fas fa-github",
+#           text = "source code",
+#           url = "https://github.com/UCSB-MEDS/cloud-computing")
+```
+
+# Overview
+
+This blog/workshop was originally developed for the [Master of Environmental Data Science (MEDS) program](https://ucsb-meds.github.io/), administered by the [Bren School of Environmental Science & Management](https://bren.ucsb.edu/masters-programs/master-environmental-data-science) in partnership with the [National Center for Ecological Analysis and Synthesis](https://www.nceas.ucsb.edu/).
+
+# Abstract
+
+Data science blogs have become increasingly popular -- and for good reason! They can be a fun way to learn a new skill and share it with your online communities, and of course learn from others as well. Lucky for us, the `{distill}` package makes it easier than ever to curate your own blog. In this workshop, we'll discuss different approaches to blogging about data science topics and learn how to customize our own blog posts using `distill`.
+
+
+
+
