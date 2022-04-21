@@ -11,7 +11,7 @@ author:
     affiliation_url: https://ucsb-meds.github.io/
 date: 2022-02-18
 slug: csik2022shiny
-preview: shiny.gif
+preview: shiny_hex.png
 categories:
   - MEDS
 output:

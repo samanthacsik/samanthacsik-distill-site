@@ -9,7 +9,7 @@ author:
     orcid_id: 0000-0002-5300-3075
     affiliation: Master of Environmental Data Science Program @ The Bren School (UCSB) & The National Center for Ecological Analysis and Synthesis
     affiliation_url: https://ucsb-meds.github.io/
-date: 2022-04-19
+date: 2022-04-18
 slug: csik2022cloudComputing
 preview: clouds.gif
 categories:

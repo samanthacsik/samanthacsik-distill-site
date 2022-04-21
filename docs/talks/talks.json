@@ -9,13 +9,13 @@
         "url": "https://samanthacsik.github.io/"
       }
     ],
-    "date": "2022-04-19",
+    "date": "2022-04-18",
     "categories": [
       "MEDS"
     ],
     "contents": "\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\n\nTelevision\nslides ~~ GitHub Square\nsource code\n\n\n\nOverview\nThis workshop was originally developed for the Master of Environmental Data Science\n(MEDS) program, administered by the Bren\nSchool of Environmental Science & Management in partnership with\nthe National Center for Ecological\nAnalysis and Synthesis.\nAbstract\n“The Cloud” is a buzzword we often hear, but maybe don’t quite\nunderstand. In this workshop, we’ll learn a bit about what cloud\ncomputing means and what it can look like, how to launch a virtual\nmachine (i.e. an instance) using Amazon Web Services (AWS), and how we\ncan leverage more powerful computers (e.g. the cloud) to run\ncomputationally-intensive processes in less time.\n\n\n\n",
     "preview": "talks/2022-04-18-an-intro-to-cloud-computing/clouds.gif",
-    "last_modified": "2022-04-20T09:43:37-07:00",
+    "last_modified": "2022-04-21T09:52:07-07:00",
     "input_file": {}
   },
   {
@@ -33,9 +33,11 @@
       "MEDS"
     ],
     "contents": "\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\n\nTelevision\nslides ~~ GitHub Square\nsource code\n\n\n\nOverview\nThis workshop was originally developed for the Master of Environmental Data Science\n(MEDS) program, administered by the Bren\nSchool of Environmental Science & Management in partnership with\nthe National Center for Ecological\nAnalysis and Synthesis.\nAbstract\nEver take a look at that beautiful data visualization you’ve worked\nso hard on and think, “How awesome would it be if my audience could\ninteract with my data??” If so, building a shiny app might be just what\nyou’re looking for. {shiny} allows you to build interactive\nweb pages and dashboards from R. In this workshop, we’ll learn how to\ntransform your data into reactive outputs that you can share via a web\nbrowser. Together, we’ll be build a shiny app that looks something like\nthis.\n\n\n\n",
-    "preview": "talks/2022-02-18-intro-to-shiny/shiny.gif",
-    "last_modified": "2022-04-20T09:44:19-07:00",
-    "input_file": {}
+    "preview": "talks/2022-02-18-intro-to-shiny/shiny_hex.png",
+    "last_modified": "2022-04-21T09:50:44-07:00",
+    "input_file": {},
+    "preview_width": 300,
+    "preview_height": 348
   },
   {
     "path": "talks/2021-12-15-data-science-with-r-python/",
@@ -65,7 +67,7 @@
     ],
     "contents": "\n\n\n\n\nTelevision\nslides ~~ GitHub Square\nGitHub Repo ~~ Video\nrecording ~~ Meetup\nMeetup Event\nOverview\nThis workshop was the result of a collaborative effort between the R-Ladies Santa\nBarbara and Central Coast Python\nMeetup groups. A special thanks to Sean Helvey for connecting with\nus to make this happen!\nAbstract\nPython can be a powerful alternative/complementary language to R, and\nwhile we here at R-Ladies are certainly partial to the latter, adding\nanother language to our data science toolkit is something we are always\nexcited for. In this R to Python (and vice versa) translation workshop,\nwe learn to wrangle and visualize the same dataset using both\nlanguages.\n\n\n\n",
     "preview": "talks/2021-12-15-data-science-with-r-python/r_python.png",
-    "last_modified": "2022-04-19T22:25:57-07:00",
+    "last_modified": "2022-04-21T09:48:16-07:00",
     "input_file": {},
     "preview_width": 739,
     "preview_height": 516
@@ -86,7 +88,7 @@
     ],
     "contents": "\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\n\nTelevision\nslides ~~ GitHub Square\nsource code\n\n\n\nOverview\nThis talk was originally developed for the Master of Environmental Data Science\n(MEDS) program, administered by the Bren\nSchool of Environmental Science & Management in partnership with\nthe National Center for Ecological\nAnalysis and Synthesis.\nAbstract\nAs environmental data scientists, we spend a lot of time in RStudio.\nTaking some time to learn how you can customize your RStudio IDE\n(Integrated Development\nEnvironment) and the keyboard shortcuts used to\nnavigate around that IDE can make you a more efficient (and happier)\nhacker!\n\n\n\n",
     "preview": "talks/2021-11-15-rstudio-tips-tricks/lightbulb.gif",
-    "last_modified": "2022-04-19T22:28:53-07:00",
+    "last_modified": "2022-04-21T09:48:16-07:00",
     "input_file": {}
   },
   {
@@ -105,7 +107,7 @@
     ],
     "contents": "\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\n\nTelevision\nslides ~~ GitHub Square\nsource code ~~ plus\nslide adaptations for invited talks ~~ Video\nrecording\n\n\n\nOverview\nThis talk was originally developed for the Master of Environmental Data Science\n(MEDS) program, administered by the Bren\nSchool of Environmental Science & Management in partnership with\nthe National Center for Ecological\nAnalysis and Synthesis.\nIt’s since been given to students from UCSB’s Master\nof Technology Management Program (Jan 2022), R-Ladies\nSt. Louis (Feb 2022), and The\nBrown School StatLab at the University of Washington in St. Louis\n(Mar 2022).\nAbstract\nGoogling for code help is something that all data scientists (at all\ncareer stages) do. But figuring out how to get the information you need\nback can be incredibly challenging, particularly for new coders. In this\nworkshop, we’ll discuss strategies for refining your queries to increase\nyour chances of finding informative solutions.\n\n\n\n",
     "preview": "talks/2021-10-11-teach-me-how-to-google/google.gif",
-    "last_modified": "2022-04-20T09:45:59-07:00",
+    "last_modified": "2022-04-21T09:48:16-07:00",
     "input_file": {}
   },
   {
@@ -124,7 +126,7 @@
     ],
     "contents": "\n\n\nWhen you’ve written the same code 3 times, write a functionWhen\nyou’ve given the same in-person advice 3 times, write a blog post\n\n— David Robinson (@drob)\nNovember\n9, 2017\n\n\nTelevision\nslides ~~ GitHub Square\nsource code ~~ Blog\nblog post\n\n\n\nOverview\nThis blog/workshop was originally developed for the Master of Environmental Data Science\n(MEDS) program, administered by the Bren\nSchool of Environmental Science & Management in partnership with\nthe National Center for Ecological\nAnalysis and Synthesis.\nAbstract\nData science blogs have become increasingly popular – and for good\nreason! They can be a fun way to learn a new skill and share it with\nyour online communities, and of course learn from others as well. Lucky\nfor us, the {distill} package makes it easier than ever to\ncurate your own blog. In this workshop, we’ll discuss different\napproaches to blogging about data science topics and learn how to\ncustomize our own blog posts using distill.\n\n\n\n",
     "preview": "talks/2022-04-20-writing-data-science-related-blog-posts-for-your-personal-website/barney_blog.gif",
-    "last_modified": "2022-04-20T09:18:17-07:00",
+    "last_modified": "2022-04-21T09:48:16-07:00",
     "input_file": {}
   },
   {
@@ -143,7 +145,7 @@
     ],
     "contents": "\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\n\nTelevision\nslides ~~ GitHub Square\nsource code\n\n\n\nOverview\nThis talk was originally developed for the Master of Environmental Data Science\n(MEDS) program, administered by the Bren\nSchool of Environmental Science & Management in partnership with\nthe National Center for Ecological\nAnalysis and Synthesis.\nAbstract\nOur MEDS students started off the inaugural year by learning how to\ncreate their own personal websites using the {distill} R\npackage. This workshop offers an intro to CSS and how to use it to\nfurther customize distill sites. We cover how to change the\ndefault element styling (fonts, colors, sizes), how to create custom CSS\nrules, and how to find inspiration from other distill websites (and\ntheir source code) on the distillery.\n\n\n\n",
     "preview": "talks/2021-08-31-customizing-your-personal-website-with-css/hacker.gif",
-    "last_modified": "2022-04-19T22:29:29-07:00",
+    "last_modified": "2022-04-21T09:48:16-07:00",
     "input_file": {}
   },
   {
@@ -170,7 +172,7 @@
     ],
     "contents": "\n\n\n\n\nTelevision\nslides ~~ GitHub Square\nGitHub Repo ~~ Meetup\nMeetup Event\nOverview\nThis live-coding workshop was given to R-Ladies Santa\nBarbara via Zoom.\nAbstract\nIn this code-along workshop, we review ggplot2 basics\nand exploring different ways to make customizing plots fun and easy.\n\n\n\n",
     "preview": "talks/2022-04-19-data-viz-with-ggplot2/ggplot2.png",
-    "last_modified": "2022-04-20T05:50:53-07:00",
+    "last_modified": "2022-04-21T09:48:16-07:00",
     "input_file": {},
     "preview_width": 240,
     "preview_height": 278
@@ -191,7 +193,7 @@
     ],
     "contents": "\n\n\n\n\nTelevision\nslides\nOverview\nThis three-minute lightning talk was given at Santa Barbara Women in STEM’s\nLightning Talks (with a focus on software) event.\nAbstract\nSynthesis science, or the science of merging data from many different\nsources to gain new insights, is critical for making predictions about\nchanges in the climate and environment and for helping us answer\nquestions about sustainably managing natural resources. However, in\norder for synthesis science to be possible, data need to be documented\nand stored in a way that makes them both discoverable and interpretable\nby researchers. My team at NCEAS is taking a semantic approach to\ncurating environmental datasets – we develop controlled vocabularies, or\nontologies, that we use to annotate data records. This helps to both (a)\nincrease our understanding of the terms researchers have used to\ndescribe their data by providing greater meaning and context, and (b)\nincreases the precision of our online data searches so that we more\nconfidently recover all available and relevant datasets.\n\n\n\n",
     "preview": "talks/2022-04-19-its-all-semantics/wahwah.jpg",
-    "last_modified": "2022-04-19T22:27:55-07:00",
+    "last_modified": "2022-04-21T09:48:16-07:00",
     "input_file": {}
   },
   {
@@ -214,7 +216,7 @@
     ],
     "contents": "\n\n\n\nFigure 1: An Bui and I getting ready to teach our very first\nR workshop to R-Ladies SB, hosted at NCEAS\n\n\n\n\nMarkdown\nknitted html ~~ GitHub Square\nGitHub Repo ~~ Meetup\nMeetup Event\nOverview\nMy very first time (co)leading an R-based live-coding\nworkshop(!) and the experience that got me hooked on teaching\nRStats/data science ❤️, given to R-Ladies Santa\nBarbara.\nAbstract\nIn this live-coding workshop, we teach useful functions for data\ntidying, wrangling and visualization using tidyverse packages &\nfunctions (e.g. dplyr, tidyr,\nggplot2, forcats, etc.). This session is\nintended for R users at any level, whether it’s your first time\nexploring the tidyverse or if you’re refreshing your wrangling\nskills!\n\n\n\n",
     "preview": "talks/2022-04-20-intro-to-the-tidyverse/infinity.gif",
-    "last_modified": "2022-04-20T09:49:17-07:00",
+    "last_modified": "2022-04-21T09:48:16-07:00",
     "input_file": {}
   }
 ]
