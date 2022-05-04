@@ -1,5 +1,37 @@
 [
   {
+    "path": "talks/2022-06-09-hello-quarto/",
+    "title": "Hello Quarto",
+    "description": "an community discussion about the coolest new programming kid on the block: Quarto",
+    "author": [
+      {
+        "name": "Julie Lowndes",
+        "url": "https://jules32.github.io/"
+      },
+      {
+        "name": "Stefanie Butland",
+        "url": "https://stefaniebutland.netlify.app/"
+      },
+      {
+        "name": "Samantha Csik",
+        "url": "https://samanthacsik.github.io/"
+      },
+      {
+        "name": "An Bui",
+        "url": "https://an-bui.com/"
+      }
+    ],
+    "date": "2022-06-09",
+    "categories": [
+      "RLadies",
+      "Openscapes"
+    ],
+    "contents": "\n\n\n\nTelevision\nslides ~~ GitHub Square\nGitHub Repo ~~ Video\nrecording ~~ Meetup\nMeetup Event\nOverview\nThis virtual community call, led by Dr. Julie Lowndes, was co-hosted\nby Openscapes and R-Ladies Santa\nBarbara.\nAbstract\ntbd\n\n\n\n",
+    "preview": {},
+    "last_modified": "2022-05-04T10:18:19-07:00",
+    "input_file": "hello-quarto.knit.md"
+  },
+  {
     "path": "talks/2022-04-18-an-intro-to-cloud-computing/",
     "title": "An Intro to Cloud Computing",
     "description": "an interactive workshop on how to launch an Amazon EC2 instance",

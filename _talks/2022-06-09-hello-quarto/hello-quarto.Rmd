@@ -1,0 +1,58 @@
+---
+title: "Hello Quarto"
+description: |
+  an community discussion about the coolest new programming kid on the block: Quarto
+author:
+  - first_name: "Julie"
+    last_name: "Lowndes"
+    url: https://jules32.github.io/
+    orcid_id: 0000-0003-1682-3872
+    affiliation: Openscapes & R-Ladies Santa Barbara
+    affiliation_url: https://www.openscapes.org/
+  - first_name: "Stefanie"
+    last_name: "Butland"
+    url: https://stefaniebutland.netlify.app/
+    orcid_id: 0000-0002-5427-8951
+    affiliation: Openscapes
+    affiliation_url: https://www.openscapes.org/
+  - first_name: "Samantha" 
+    last_name: "Csik"
+    url: https://samanthacsik.github.io/
+    orcid_id: 0000-0002-5300-3075
+    affiliation: R-Ladies Santa Barbara
+    affiliation_url: https://www.meetup.com/rladies-santa-barbara/
+  - first_name: "An"
+    last_name: "Bui"
+    url: https://an-bui.com/
+    orcid_id: 0000-0002-9548-7776
+    affiliation: R-Ladies Santa Barbara
+    affiliation_url: https://www.meetup.com/rladies-santa-barbara/
+date: 2022-06-09
+slug: lowndesetal2022Quarto
+preview: 
+categories:
+  - RLadies
+  - Openscapes
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r}
+# add cover image
+# knitr::include_graphics("")
+```
+
+[`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides]() ~~ [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` GitHub Repo]() ~~ [`r fontawesome::fa("video", fill = "#64605F", a11y = "sem")` recording]() ~~ [`r fontawesome::fa("meetup", fill = "#64605F", a11y = "sem")` Meetup Event]()
+
+# Overview
+
+This virtual community call, led by Dr. Julie Lowndes, was co-hosted by [Openscapes](https://www.openscapes.org/) and [R-Ladies Santa Barbara](https://www.meetup.com/rladies-santa-barbara/).
+
+# Abstract
+
+tbd
