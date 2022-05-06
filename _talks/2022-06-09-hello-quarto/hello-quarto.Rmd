@@ -2,6 +2,7 @@
 title: "Hello Quarto"
 description: |
   an community discussion about the coolest new programming kid on the block: Quarto
+draft: TRUE
 author:
   - first_name: "Julie"
     last_name: "Lowndes"
