@@ -26,13 +26,13 @@ It's finally time for an upgraded notebook! I've been Slacking myself (and subse
 
 * [The Sessions College Color Calculator](https://www.sessions.edu/color-calculator/), for creating color palettes
 
-## reporting 
+## reporting & presentations
 
 * The newest, coolest kid on the block (at least according to my Twitter feed at the end of March 2022) seems to be **Quarto** i.e. the next gen of RMarkdown. Download and find some great tutorials [here](https://quarto.org/)
 
-* Meet xaringan: Making slides in R Markdown, by Allison Hill. [slides](https://arm.rbind.io/slides/xaringan.html#1)
+* [Meet xaringan: Making slides in R Markdown](https://arm.rbind.io/slides/xaringan.html#1), by Allison Hill
 
-* Something I haven't yet tried out (but really want to) -- [Sharing Your `xaringan` Slides](https://www.garrickadenbuie.com/blog/sharing-xaringan-slides/), by Garrick Aden-Buie
+*  [Sharing Your `xaringan` Slides](https://www.garrickadenbuie.com/blog/sharing-xaringan-slides/), by Garrick Aden-Buie
 
 ## learning materials
 
