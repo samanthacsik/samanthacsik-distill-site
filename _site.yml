@@ -7,8 +7,10 @@ base_url: samanthacsik.github.io
 output_dir: "docs"
 navbar:
   right:
-    - text: "about"
+    - text: "home"
       href: index.html
+    - text: "about"
+      href: about.html
     - text: "talks & workshops"
       href: talks_workshops.html
     - text: "posts"
