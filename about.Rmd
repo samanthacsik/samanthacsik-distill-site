@@ -1,7 +1,7 @@
 ---
 title: "about"
 description: |
-  thanks for stopping by my little corner of the internet! slowly trying to add a bit more about who i am outside of work
+  thanks for stopping by my little corner of the internet! 
 output: 
   distill::distill_article:
     self_contained: false
@@ -13,6 +13,8 @@ editor_options:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+I'm slowly trying to add a bit more about who I am outside of work. More to come soon!
 
 <!--html_preserve-->
 <iframe src = "sams_hiking_map_ESRITerrain.html", width ="600", height="400"> </iframe>
