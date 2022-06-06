@@ -1,0 +1,27 @@
+---
+title: "about"
+description: |
+  thanks for stopping by my little corner of the internet! slowly trying to add a bit more about who i am outside of work
+output: 
+  distill::distill_article:
+    self_contained: false
+    highlight: kate
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<!--html_preserve-->
+<iframe src = "sams_hiking_map_ESRITerrain.html", width ="600", height="400"> </iframe>
+<!--/html_preserve-->
+<span style = 'font-size: 90%;'><em><center>Map last updated: June 4, 2022</em></center></span>
+
+I feel very fortunate to be doing so many of things that I love *a lot* right now. That includes my job, but also spending lots of time outdoors. Living in Santa Barbara is a massive privilege and being here means that we have access to both the mountains and the sea, each a few minutes in either direction. It was the ocean that brought me here originally, but most of my free time is now spent on the trails. 
+
+I started recording my hikes on [Strava](https://www.strava.com/) in late 2020 and finally got around to scraping my activity data using the [`rStrava`](https://github.com/fawda123/rStrava) package. Below is a heat map of all my recorded hikes made using [`leaflet`](https://rstudio.github.io/leaflet/). I'm still mulling over a better way to display activity information, as the markers overlap a lot at my most frequented trail heads. Huge shout out to [Daniel Cullen]() (who also happens to be a Santa Barbara resident!) for his awesome [blogpost](https://www.dancullen.me/articles/creating-a-heatmap-in-r-with-google-polylines) that got me started with my own map.
+
+You can check out the source code on [`r fontawesome::fa("github", fill = "#64605F", a11y = "sem")`](https://github.com/samanthacsik/strava-hikes).
+
