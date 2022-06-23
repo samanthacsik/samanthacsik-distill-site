@@ -1,0 +1,79 @@
+---
+title: "Hello Quarto! (originally published on the Openscapes blog)"
+description: |
+  a Quarto Chat with NASA Openscapes, co-hosted with R-Ladies Santa Barbara
+author:
+  - first_name: "Samantha" 
+    last_name: "Csik"
+    url: https://samanthacsik.github.io/
+    orcid_id: 0000-0002-5300-3075
+    affiliation: R-Ladies Santa Barbara
+    affiliation_url: https://www.meetup.com/rladies-santa-barbara/
+  - first_name: "Julie"
+    last_name: "Lowndes"
+    url: https://jules32.github.io/
+    orcid_id: 0000-0003-1682-3872
+    affiliation: Openscapes
+    affiliation_url: https://www.openscapes.org/
+  - first_name: "Amy"
+    last_name: "Steiker"
+    url: https://www.linkedin.com/in/amy-steiker-04088448/
+    orcid_id: 0000-0002-3039-0260
+    affiliation: NASA Openscapes Mentor
+    affiliation_url: https://nasa-openscapes.github.io/
+  - first_name: "Catalina"
+    last_name: "Oaida Taglialatela"
+    url: https://www.researchgate.net/profile/Catalina-Oaida
+    orcid_id: 0000-0001-6854-7254
+    affiliation: NASA Openscapes Mentor
+    affiliation_url: https://nasa-openscapes.github.io/
+  - first_name: "Aaron"
+    last_name: "Friesz"
+    url: https://www.linkedin.com/in/aaron-friesz-32a3751a6/
+    orcid_id: 0000-0003-4096-3824
+    affiliation: NASA Openscapes Mentor
+    affiliation_url: https://nasa-openscapes.github.io/
+  - first_name: "J.J."
+    last_name: "Allaire"
+    url: https://www.rstudio.com/authors/j.j.-allaire/
+    orcid_id: 0000-0003-0174-9868
+    affiliation: RStudio
+    affiliation_url: https://www.rstudio.com/
+  - first_name: "Erin"
+    last_name: "Robinson"
+    url: https://erinrobinson.net/
+    orcid_id: 0000-0001-9998-0114
+    affiliation: Openscapes
+    affiliation_url: https://www.openscapes.org/
+  - first_name: "Stefanie"
+    last_name: "Butland"
+    url: https://stefaniebutland.netlify.app/
+    orcid_id: 0000-0002-5427-8951
+    affiliation: Openscapes
+    affiliation_url: https://www.openscapes.org/
+date: 2022-06-22
+slug: csiketal2022Quarto
+preview: quarto.png
+categories:
+  - RLadies
+  - Openscapes
+  - R
+  - Python
+output:
+  distill::distill_article:
+    self_contained: false
+draft: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, fig.cap = "Catalina Oaida Taglialatela screenshares the NASA Earthdata Cloud Cookbook, which is build using Quarto and accessible at https://nasa-openscapes.github.io/earthdata-cloud-cookbook/"}
+# add cover image
+knitr::include_graphics("media/cookbook.png")
+```
+
+[Quarto](https://quarto.org/), the new cool kid on the open data science block, extends the best features of RMarkdown (plus more!) to Python, Julia, and ObservableJS users. I got the chance to chat with folks at the forefront of exploring all that Quarto is capable of during the 6th Openscapes Community Call. Check out our post on the [`r fontawesome::fa("blog", fill = "#64605F", a11y = "sem")` Openscapes Blog](https://www.openscapes.org/blog/2022/06/22/hello-quarto/), were we summarize some of what we discussed, from publishing Quarto websites and slide decks, to how Quarto enables seamless integration between different language users, to how *amazingly easy* it is to insert automatically-generated citations into your Quarto documents.
+
+Find the full event recording  [`r fontawesome::fa("video", fill = "#64605F", a11y = "sem")` here](https://www.youtube.com/watch?v=azVAl343CIU)!

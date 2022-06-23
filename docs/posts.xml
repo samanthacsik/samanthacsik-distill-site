@@ -7,7 +7,27 @@
     <description>Samantha Csik's personal website
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Fri, 24 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Hello Quarto! (originally published on the Openscapes blog)</title>
+      <dc:creator>Samantha Csik</dc:creator>
+      <dc:creator>Julie Lowndes</dc:creator>
+      <dc:creator>Amy Steiker</dc:creator>
+      <dc:creator>Catalina Oaida Taglialatela</dc:creator>
+      <dc:creator>Aaron Friesz</dc:creator>
+      <dc:creator>J.J. Allaire</dc:creator>
+      <dc:creator>Erin Robinson</dc:creator>
+      <dc:creator>Stefanie Butland</dc:creator>
+      <link>samanthacsik.github.io/posts/2022-06-22-hello-quarto</link>
+      <description>a Quarto Chat with NASA Openscapes, co-hosted with R-Ladies Santa Barbara</description>
+      <category>RLadies</category>
+      <category>Openscapes</category>
+      <category>R</category>
+      <category>Python</category>
+      <guid>samanthacsik.github.io/posts/2022-06-22-hello-quarto</guid>
+      <pubDate>Wed, 22 Jun 2022 00:00:00 +0000</pubDate>
+      <media:content url="samanthacsik.github.io/posts/2022-06-22-hello-quarto/quarto.png" medium="image" type="image/png" width="2158" height="1290"/>
+    </item>
     <item>
       <title>Why create presentation slides about blogging when you can just blog about it instead?</title>
       <dc:creator>Samantha Csik</dc:creator>

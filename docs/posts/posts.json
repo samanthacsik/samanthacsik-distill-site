@@ -1,5 +1,57 @@
 [
   {
+    "path": "posts/2022-06-22-hello-quarto/",
+    "title": "Hello Quarto! (originally published on the Openscapes blog)",
+    "description": "a Quarto Chat with NASA Openscapes, co-hosted with R-Ladies Santa Barbara",
+    "author": [
+      {
+        "name": "Samantha Csik",
+        "url": "https://samanthacsik.github.io/"
+      },
+      {
+        "name": "Julie Lowndes",
+        "url": "https://jules32.github.io/"
+      },
+      {
+        "name": "Amy Steiker",
+        "url": "https://www.linkedin.com/in/amy-steiker-04088448/"
+      },
+      {
+        "name": "Catalina Oaida Taglialatela",
+        "url": "https://www.researchgate.net/profile/Catalina-Oaida"
+      },
+      {
+        "name": "Aaron Friesz",
+        "url": "https://www.linkedin.com/in/aaron-friesz-32a3751a6/"
+      },
+      {
+        "name": "J.J. Allaire",
+        "url": "https://www.rstudio.com/authors/j.j.-allaire/"
+      },
+      {
+        "name": "Erin Robinson",
+        "url": "https://erinrobinson.net/"
+      },
+      {
+        "name": "Stefanie Butland",
+        "url": "https://stefaniebutland.netlify.app/"
+      }
+    ],
+    "date": "2022-06-22",
+    "categories": [
+      "RLadies",
+      "Openscapes",
+      "R",
+      "Python"
+    ],
+    "contents": "\n\n\n\nFigure 1: Catalina Oaida Taglialatela screenshares the NASA\nEarthdata Cloud Cookbook, which is build using Quarto and accessible at\nhttps://nasa-openscapes.github.io/earthdata-cloud-cookbook/\n\n\n\nQuarto, the new cool kid on the\nopen data science block, extends the best features of RMarkdown (plus\nmore!) to Python, Julia, and ObservableJS users. I got the chance to\nchat with folks at the forefront of exploring all that Quarto is capable\nof during the 6th Openscapes Community Call. Check out our post on the\nBlog\nOpenscapes Blog, were we summarize some of what we discussed, from\npublishing Quarto websites and slide decks, to how Quarto enables\nseamless integration between different language users, to how\namazingly easy it is to insert automatically-generated\ncitations into your Quarto documents.\nFind the full event recording Video\nhere!\n\n\n\n",
+    "preview": "posts/2022-06-22-hello-quarto/quarto.png",
+    "last_modified": "2022-06-23T15:26:25-07:00",
+    "input_file": {},
+    "preview_width": 2158,
+    "preview_height": 1290
+  },
+  {
     "path": "posts/2021-09-21-my-first-test-post/",
     "title": "Why create presentation slides about blogging when you can just blog about it instead?",
     "description": "I started putting together some slides on the whys and hows of blogging using {distill} when I realized...maybe I've just found the content for my first blog post??",
