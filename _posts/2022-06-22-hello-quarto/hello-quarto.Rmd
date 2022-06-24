@@ -69,7 +69,7 @@ draft: false
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-```{r, fig.cap = "Catalina Oaida Taglialatela screenshares the NASA Earthdata Cloud Cookbook, which is built using Quarto and accessible at https://nasa-openscapes.github.io/earthdata-cloud-cookbook/"}
+```{r, fig.cap = "Catalina Oaida Taglialatela screenshares the NASA Earthdata Cloud Cookbook, a website built using Quarto and accessible at https://nasa-openscapes.github.io/earthdata-cloud-cookbook/"}
 # add cover image
 knitr::include_graphics("media/cookbook.png")
 ```
