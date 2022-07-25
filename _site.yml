@@ -18,6 +18,6 @@ navbar:
     - text: "resources"
       href: resources.html
     - text: "cv"
-      href: CV/SCsik_CV_2022_07_18.pdf
+      href: CV/SCsik_CV.pdf
   source_url: https://github.com/samanthacsik/samanthacsik.github.io
 output: distill::distill_article
