@@ -1,0 +1,37 @@
+---
+title: "Creating your personal website using Quarto"
+description: |
+  step-by-step instructions for building, deploying, and customizing a Quarto website
+author:
+  - name: Samantha Csik
+    url: https://samanthacsik.github.io/
+date: 2022-08-05
+slug: csik2022quartoWebsites
+preview: quarto.jpeg
+categories:
+  - MEDS
+  - Quarto
+  - R
+  - Websites & Blogs
+draft: true
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Overview
+
+This blog/workshop was originally developed for the [Master of Environmental Data Science (MEDS) program](https://ucsb-meds.github.io/), administered by the [Bren School of Environmental Science & Management](https://bren.ucsb.edu/masters-programs/master-environmental-data-science) in partnership with the [National Center for Ecological Analysis and Synthesis](https://www.nceas.ucsb.edu/).
+
+# Abstract
+
+A personal website is not only a great way to showcase your experiences and skills, but also gives people (potential employers included!) a better sense of who you are as a person. There are lots of great ways to build websites using R (e.g. `{distill}`, `{blogdown}`) -- this year, we'll be using Quarto, an exciting, new, and versatile publishing tool that supports R, Python, Julia, and ObservableJS.
+
+Some content was adapted from Allison Horst's [instructions](https://docs.google.com/document/d/1c0SZiVvp32UTJ9sK_yVjI8ou6pVdFRXsY2236tiTA1c/edit) for building a `distill` website.
+
+
