@@ -7,7 +7,20 @@
     <description>Samantha Csik's personal website
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 18 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Creating your personal website using Quarto</title>
+      <dc:creator>Samantha Csik</dc:creator>
+      <link>samanthacsik.github.io/talks/2022-08-05-creating-your-personal-website-using-quarto</link>
+      <description>step-by-step instructions for building, deploying, and customizing a Quarto website</description>
+      <category>MEDS</category>
+      <category>Quarto</category>
+      <category>R</category>
+      <category>Websites &amp; Blogs</category>
+      <guid>samanthacsik.github.io/talks/2022-08-05-creating-your-personal-website-using-quarto</guid>
+      <pubDate>Fri, 05 Aug 2022 00:00:00 +0000</pubDate>
+      <media:content url="samanthacsik.github.io/talks/2022-08-05-creating-your-personal-website-using-quarto/quarto_share.png" medium="image" type="image/png" width="8000" height="4500"/>
+    </item>
     <item>
       <title>An Intro to Cloud Computing</title>
       <dc:creator>Samantha Csik</dc:creator>

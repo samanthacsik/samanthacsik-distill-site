@@ -1,5 +1,29 @@
 [
   {
+    "path": "talks/2022-08-05-creating-your-personal-website-using-quarto/",
+    "title": "Creating your personal website using Quarto",
+    "description": "step-by-step instructions for building, deploying, and customizing a Quarto website",
+    "author": [
+      {
+        "name": "Samantha Csik",
+        "url": "https://samanthacsik.github.io/"
+      }
+    ],
+    "date": "2022-08-05",
+    "categories": [
+      "MEDS",
+      "Quarto",
+      "R",
+      "Websites & Blogs"
+    ],
+    "contents": "\n\n\n\nFigure 1: Art by Allison\nHorst: One penguin standing on another penguin’s shoulders in a\nsnowscape, looking through a telescope at a Quarto logo ‘moon’ in the\nnight sky.\n\n\n\nAlternate File\ninstructional documentation ~~ GitHub Square\nsource code ~~ Blog\nblog post\nOverview\nThis workshop was originally developed for the Master of Environmental Data Science\n(MEDS) program, administered by the Bren\nSchool of Environmental Science & Management in partnership with\nthe National Center for Ecological\nAnalysis and Synthesis.\nAbstract\nA personal website is not only a great way to showcase your\nexperiences and skills, but also gives people (potential employers\nincluded!) a better sense of who you are as a person. There are lots of\ngreat tools for building websites using R (e.g. {distill},\n{blogdown}) – this year, we’ll be using Quarto, an exciting, new, and versatile\npublishing tool that supports R, Python, Julia, and ObservableJS. Want\nto get started on building your own website using Quarto? Check out this\ntutorial.\n\n\n\n",
+    "preview": "talks/2022-08-05-creating-your-personal-website-using-quarto/quarto_share.png",
+    "last_modified": "2022-08-08T13:34:55-07:00",
+    "input_file": {},
+    "preview_width": 8000,
+    "preview_height": 4500
+  },
+  {
     "path": "talks/2022-04-18-an-intro-to-cloud-computing/",
     "title": "An Intro to Cloud Computing",
     "description": "an interactive workshop on how to launch an Amazon EC2 instance",
